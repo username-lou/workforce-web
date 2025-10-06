@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Call Reso</title>
+</head>
+
+
+<style>
+body {background-color: #000833;}
+</style>
+
+
+<body>
+
+<div id="content">
+
+<style>
+    header {
+      display: flex;              
+      align-items: center;        
+      padding: 2px;
+      background-color: #ffffff;
+      width: 1920px;
+    }
+    header img {
+      height: 70px;              
+      margin-right: 15px;  
+      margin: 0;
+    }
+</style>
+
+
+<header>
+ 	<a href="Workforce Web.htm"><img src="Images/WFM3.jpg"></a>
+	<h1>&nbsp;&nbsp;&nbsp;Workforce Management</h1>
+</header>
+
+
+<!-- Search Button -->
+
+<style>
+		*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: Calibri;
+		}
+	.search{
+		width: 14%;
+		display: flex;
+		align-items: left;
+		background: transparent;
+		background-image: linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9)), url(Desktop/Search.png);
+		transition: background 0.25s;
+		}
+	.search-bar{
+		width: 100%;
+		max-width: 700px;
+		background: transparent;
+		display: flex;
+		align-items: center;
+		border-radius: 60px;
+		padding: 10px 5px;
+		}
+	.search-bar input{
+		background: white;
+		flex: 1;
+		border: 0;
+		outline: none;
+		padding: 10px 20px;
+		font-size: 14px;
+		color: black;
+		}
+	::placeholder{
+		color: #ccc;
+		}
+	.search-bar button img{
+		padding: 8px 8px;
+		}
+	.search-bar button img:hover {
+  		text-decoration: underline;
+  		color: white;                
+  		background-color: #007BFF;
+  		cursor: pointer;
+  		border-radius: 4px;
+		}
+	.search-bar button{
+		border: 0;
+		border-radius: 50%
+		width: 60px;
+		height: 60px;
+		background: transparent;
+		}
+
+	.highlight {
+		background-color: yellow;
+    		font-weight: bold;
+  		}
+</style>
+
+<div class="search">
+<div class="search-bar">
+<input id="myInput" placeholder="Keywords">
+<button id="myBtn"><img src="Images/Search.png"></button>
+</div>
+</div>
+
+
+<!-- Collapse/Expand -->
+
+<style>
+    .horizontal-menu {
+	display: flex;
+	gap: 1px;
+    	}
+    .wrapper {
+  	width: 220px;
+  	font-family: Calibri;
+	}
+   .item-main {
+  	border: 1px solid #ccc;
+  	margin-bottom: 5px;
+  	border-radius: 4px;
+  	background-color: #f5f5f5;
+  	overflow: hidden;
+	}
+  .toggle-btn {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	padding: 12px;
+  	cursor: pointer;
+  	background-color: #ADD8E6;
+	}
+  .toggle-btn-name {
+  	text-decoration: none; 
+  	color: black;           
+  	transition: all 0.1s ease;
+	}
+ .toggle-btn-name:hover {
+  	text-decoration: underline;
+  	color: white;                
+  	background-color: #007BFF;
+  	cursor: pointer;
+  	border-radius: 4px;
+	}
+  .toggle-content {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 10px 20px;
+	background-color: #fafafa;
+	}
+  .toggle-content li {
+  	padding: 4px 0;
+	font-size: 14px;
+	}
+   .toggle-content.show {
+	display: block;
+	}
+</style>
+
+<nav class="horizontal-menu">
+
+<div class="wrapper">
+<div class="item-main">
+<div class="hover-item">
+  	<div class="toggle-btn">
+    	<a href="Workforce Web.htm"><span class="toggle-btn-name"><b><u>Home</u></b></span></a>
+     </div>
+   </div>
+</div>
+
+<div class="wrapper">
+  <div class="item-main">
+    <div class="toggle-btn" data-expand="0">
+      <span class="toggle-btn-name"><b><u>Staff</u></b></span>
+      <span class="toggle-icon">&plus;</span>
+    </div>
+    <ul class="toggle-content">
+	<li><a href="Leaders.htm"><summary>Leaders</summary></a></li>
+	<li><a href="Realtime.htm"><summary>Realtime Analyst</summary></a></li>
+	<li><a href="Reports.htm"><summary>Reports Analyst</summary></a></li>
+	<li><a href="Scheduler.htm"><summary>Scheduler</summary></a></li>
+	<li><a href="Org Chart.htm">Org Chart</a></li>
+    </ul>
+</div>
+
+<div class="wrapper">
+  <div class="item-main">
+    <div class="toggle-btn" data-expand="0">
+      <span class="toggle-btn-name"><b><u>Terminology</u></b></span>
+      <span class="toggle-icon">&plus;</span>
+    </div>
+    <ul class="toggle-content">
+        <li><a href="Adherence.htm">Adherence</a></li>
+        <li><a href="AHT.htm">AHT</a></li>
+        <li><a href="ASA.htm">Average Speed Answer</a></li>
+	<li><a href="Attrition.htm">Attrition</a></li>
+        <li><a href="Call Abandon.htm">Call Abandon</a></li>
+	<li><a href="Call Routing.htm">Utilization</a></li>
+        <li><a href="Call Volume Forecast.htm">Call Volume Forecast</a></li>
+        <li><a href="Capacity Planning.htm">Capacity Planning</a></li>
+        <li><a href="Conformance.htm">Conformance</a></li>
+        <li><a href="First Call Reso.htm">First Call Resolution</a></li>
+        <li><a href="Productivity.htm">Productivity</a></li>
+        <li><a href="Occupancy.htm">Occupancy</a></li>
+        <li><a href="Required FTE.htm">Required FTE</a></li>
+        <li><a href="Required Avail FTE.htm">Required Availeble FTE</a></li>
+        <li><a href="Service Level.htm">Service Level</a></li>
+        <li><a href="Show Rate.htm">Show Rate</a></li>
+        <li><a href="Shrinkage.htm">Shrinkage</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper">
+<div class="item-main">
+<div class="hover-item">
+  	<div class="toggle-btn" data-expand="0">
+	<a href="Report Files.htm"><span class="toggle-btn-name"><b><u>Reports</u></b></span></a>
+	</div>
+  	</div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+<!-- Main Content Area -->
+
+<style>
+    body {
+      margin: 0;
+      font-family: Calibri;
+    	}
+    main.center-top {
+      align-items: flex-start;
+      padding: 0px 20px 10px;
+    	}
+    .main-content {
+  	width: 1650px;
+  	height: 700px;
+  	overflow-y: auto; 
+  	margin: 0 auto;
+  	padding: 15px;
+  	background-color: #D3D3D3;
+	}
+   .container {
+      display: flex;
+      justify-content: start;
+      gap: 300px;
+      padding: 20px;
+    	}
+    .column {
+      width: 200px;
+	}
+    h3 {
+      margin-top: 0;
+	}
+   .no-wrap-text{
+	white-space: nowrap;
+	}
+   ul {
+    padding-left: 40px;
+    margin: 0;
+  	}
+  li {
+    position: fix;
+    margin-bottom: 1em;
+    text-indent: 20px;
+  	}
+</style>
+
+<article>
+<main class="center-top">
+	<div class="main-content" id="main-content">
+		<h1><b><font size=6>First Call Resolution</font></b></h1>
+		<hr>
+		<br></br>
+    	<p><b><i><font size=4>First Call Resolution (FCR)</font></b></i> <i> - A metric that measures the percentage of customer issues resolved in the first interaction, without the need for the customer to call back, be transferred, or have the case escalated.</i></p>
+<br></br>
+    <p><b>Formula:</b>
+<div class="container">
+    <ul>
+      <i><p class="no-wrap-text"><font size=5>FCR %&nbsp;&nbsp;=&nbsp;&nbsp&nbsp;&nbsp; <u>&nbsp;Contacts Resolved on First Interaction&nbsp</u></i>&nbsp;&nbsp;&nbsp;x100%</font></p></p>
+      	<p style="text-align: center;"><font size=5><i>Total Contacts</i></font>
+
+</div>
+</main>
+</article>
+
+</nav>
+
+<hr style="border: none; height: 4px; background-color: #ffffff; margin: 20px 0;">
+
+
+
+
+ <!-- Sidebar (Optional) -->
+
+  <aside>
+    <p><font color=white>Additional information, links, or ads go here.</font></p>
+  </aside>
+
+<!-- Footer -->
+  <footer>
+    <p><font color=white>&copy; 2025 Pennymac Workforce Management. All rights reserved.</font></p>
+  </footer>
+</div>
+
+
+
+
+<!--Script Search -->
+
+<script>
+function highlightText(container, text) {
+  // Clear existing highlights
+  const highlighted = container.querySelectorAll("span.highlight");
+  highlighted.forEach(span => {
+    const parent = span.parentNode;
+    parent.replaceChild(document.createTextNode(span.textContent), span);
+    parent.normalize(); // Merge adjacent text nodes
+  });
+
+  if (!text) return;
+
+  const safeSearch = text.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const regex = new RegExp(safeSearch, 'gi');
+
+  function walk(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      if (node.nodeValue.match(regex)) {
+        const replacedText = node.nodeValue.replace(regex, match => {
+          return `<span class="highlight" style="background-color: yellow;">${match}</span>`;
+        });
+
+        const temp = document.createElement('span');
+        temp.innerHTML = replacedText;
+
+        while (temp.firstChild) {
+          const inserted = node.parentNode.insertBefore(temp.firstChild, node);
+          // 🔓 Auto-expand if inside a collapsed toggle section
+          expandIfInsideCollapsed(inserted);
+        }
+
+        node.parentNode.removeChild(node);
+      }
+    } else if (
+      node.nodeType === Node.ELEMENT_NODE &&
+      node.tagName !== 'SCRIPT' &&
+      node.tagName !== 'STYLE'
+    ) {
+      for (let i = 0; i < node.childNodes.length; i++) {
+        walk(node.childNodes[i]);
+      }
+    }
+  }
+
+  // 🔓 Expand parent toggle if collapsed
+  function expandIfInsideCollapsed(node) {
+    let parent = node.parentElement;
+    while (parent) {
+      if (parent.classList.contains('toggle-content') && !parent.classList.contains('show')) {
+        parent.classList.add('show');
+        // Change the icon from "+" to "−"
+        const toggleBtn = parent.previousElementSibling;
+        const icon = toggleBtn.querySelector('.toggle-icon');
+        if (icon) {
+          icon.innerHTML = '&minus;';
+        }
+      }
+      parent = parent.parentElement;
+    }
+  }
+
+  walk(container);
+}
+
+const input = document.getElementById("myInput");
+const btn = document.getElementById("myBtn");
+const content = document.getElementById("content");
+
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    btn.click();
+  }
+});
+
+btn.addEventListener("click", function () {
+  const searchText = input.value.trim();
+  highlightText(content, searchText);
+});
+</script>
+
+
+
+
+<!--Script Collapse/Expand -->
+
+<script>
+  document.querySelectorAll('.toggle-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const content = this.nextElementSibling;
+      const icon = this.querySelector('.toggle-icon');
+
+      content.classList.toggle('show');
+      const isOpen = content.classList.contains('show');
+      icon.innerHTML = isOpen ? '&minus;' : '&plus;';
+    });
+  });
+</script>
+
+
+
+
+
+</body>
+
+</html>
+
+
