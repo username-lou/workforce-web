@@ -326,10 +326,11 @@ body {background-color: #000833;}
 
 
 
+<!--Script Search -->
 
-
-	<script>
-async function searchFiles() {
+<script>
+	
+	async function searchFiles() {
     const searchTerm = document.getElementById('searchInput').value;
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = ''; // Clear previous results
@@ -360,12 +361,7 @@ async function searchFiles() {
         resultsDiv.innerHTML += `<p>"${searchTerm}" not found in the specified files.</p>`;
     }
 }
-</script>
-
-
-<!--Script Search -->
-
-<script>
+	
 function highlightText(container, text) {
   // Clear existing highlights
   const highlighted = container.querySelectorAll("span.highlight");
@@ -534,6 +530,7 @@ function myFunction() {
 </body>
 
 </html>
+
 
 
 
