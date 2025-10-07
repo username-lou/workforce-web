@@ -406,6 +406,16 @@ input.addEventListener("keypress", function (event) {
 btn.addEventListener("click", function () {
   const searchText = input.value.trim();
   highlightText(content, searchText);
+
+
+    fetch('AHT.htm').then(function (response) {
+        return response.text();
+    }).then(function (html) {
+        console.log(html.includes("ipsum"))
+    }).catch(function (err) {
+        console.warn('Something went wrong.', err);
+
+		
 });
 </script>
 
@@ -435,6 +445,7 @@ btn.addEventListener("click", function () {
 
 </body>
 </html>
+
 
 
 
