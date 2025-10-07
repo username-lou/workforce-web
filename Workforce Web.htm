@@ -330,38 +330,6 @@ body {background-color: #000833;}
 
 <script>
 	
-	async function searchFiles() {
-    const searchTerm = document.getElementById('searchInput').value;
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = ''; // Clear previous results
-
-    const filesToSearch = ['AHT.htm', 'ASA.htm'];
-    let allContent = '';
-    let foundInFiles = [];
-
-    // Fetch and process each file
-    for (const file of filesToSearch) {
-        try {
-            const response = await fetch(file);
-            const htmlContent = await response.text(); // Get file content as text
-
-            if (htmlContent.includes(searchTerm)) {
-                foundInFiles.push(file);
-            }
-        } catch (error) {
-            console.error(`Error fetching or reading ${file}:`, error);
-            resultsDiv.innerHTML += `<p>Error searching ${file}</p>`;
-        }
-    }
-
-    // Display results
-    if (foundInFiles.length > 0) {
-        resultsDiv.innerHTML += `<p>Found "${searchTerm}" in: ${foundInFiles.join(', ')}</p>`;
-    } else {
-        resultsDiv.innerHTML += `<p>"${searchTerm}" not found in the specified files.</p>`;
-    }
-}
-	
 function highlightText(container, text) {
   // Clear existing highlights
   const highlighted = container.querySelectorAll("span.highlight");
@@ -530,6 +498,7 @@ function myFunction() {
 </body>
 
 </html>
+
 
 
 
