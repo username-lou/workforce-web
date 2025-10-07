@@ -407,45 +407,6 @@ btn.addEventListener("click", function () {
   const searchText = input.value.trim();
   highlightText(content, searchText);
 });
-
-
-        async function searchFiles() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const resultsDiv = document.getElementById('results');
-            resultsDiv.innerHTML = ''; // Clear previous results
-
-            const filesToSearch = ['Realtime.htm', 'page2.html']; // List of HTML files to search
-
-            for (const file of filesToSearch) {
-                try {
-                    const response = await fetch(file);
-                    const text = await response.text();
-                    
-                    if (text.toLowerCase().includes(searchTerm)) {
-                        const p = document.createElement('p');
-                        p.textContent = `Found "${searchTerm}" in ${file}`;
-                        resultsDiv.appendChild(p);
-                    }
-                } catch (error) {
-                    console.error(`Error fetching ${file}:`, error);
-                }
-            }
-            if (resultsDiv.innerHTML === '') {
-                resultsDiv.innerHTML = '<p>No results found.</p>';
-            }
-        }
-
-
-    fetch('Realtime.htm').then(function (response) {
-        return response.text();
-    }).then(function (html) {
-        console.log(html.includes("ipsum"))
-    }).catch(function (err) {
-        console.warn('Something went wrong.', err);
-    });
-
-
-
 </script>
 
 
@@ -466,35 +427,9 @@ btn.addEventListener("click", function () {
   });
 </script>
 
-<script>
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
-
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
-
-
-
-
-
-
 
 </body>
 
 </html>
+
 
