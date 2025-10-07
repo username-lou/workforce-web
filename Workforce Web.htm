@@ -409,43 +409,6 @@ btn.addEventListener("click", function () {
 });
 
 
-        async function searchFiles() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const resultsDiv = document.getElementById('results');
-            resultsDiv.innerHTML = ''; // Clear previous results
-
-            const filesToSearch = ['Realtime.htm', 'page2.html']; // List of HTML files to search
-
-            for (const file of filesToSearch) {
-                try {
-                    const response = await fetch(file);
-                    const text = await response.text();
-                    
-                    if (text.toLowerCase().includes(searchTerm)) {
-                        const p = document.createElement('p');
-                        p.textContent = `Found "${searchTerm}" in ${file}`;
-                        resultsDiv.appendChild(p);
-                    }
-                } catch (error) {
-                    console.error(`Error fetching ${file}:`, error);
-                }
-            }
-            if (resultsDiv.innerHTML === '') {
-                resultsDiv.innerHTML = '<p>No results found.</p>';
-            }
-        }
-
-
-    fetch('Realtime.htm').then(function (response) {
-        return response.text();
-    }).then(function (html) {
-        console.log(html.includes("ipsum"))
-    }).catch(function (err) {
-        console.warn('Something went wrong.', err);
-    });
-
-
-
 </script>
 
 
@@ -490,45 +453,10 @@ function myFunction() {
 
 
 
-<script>
-async function searchFiles() {
-    const searchTerm = document.getElementById('searchInput').value;
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = ''; // Clear previous results
-
-    const filesToSearch = ['AHT.htm', 'ASA.htm'];
-    let allContent = '';
-    let foundInFiles = [];
-
-    // Fetch and process each file
-    for (const file of filesToSearch) {
-        try {
-            const response = await fetch(file);
-            const htmlContent = await response.text(); // Get file content as text
-
-            if (htmlContent.includes(searchTerm)) {
-                foundInFiles.push(file);
-            }
-        } catch (error) {
-            console.error(`Error fetching or reading ${file}:`, error);
-            resultsDiv.innerHTML += `<p>Error searching ${file}</p>`;
-        }
-    }
-
-    // Display results
-    if (foundInFiles.length > 0) {
-        resultsDiv.innerHTML += `<p>Found "${searchTerm}" in: ${foundInFiles.join(', ')}</p>`;
-    } else {
-        resultsDiv.innerHTML += `<p>"${searchTerm}" not found in the specified files.</p>`;
-    }
-}
-</script>
-
-
-
 </body>
 
 </html>
+
 
 
 
