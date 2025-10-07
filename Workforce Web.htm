@@ -103,8 +103,13 @@ body {background-color: #000833;}
 
 <div class="search">
 <div class="search-bar">
+
+<form action="AHT.htm" method="get">	
 <input id="myInput" placeholder="Keywords">
 <button id="myBtn"><img src="Images/Search.png"></button>
+</form>
+
+	
 </div>
 </div>
 
@@ -428,9 +433,28 @@ btn.addEventListener("click", function () {
 </script>
 
 
-</body>
 
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchTerm = urlParams.get('search_term'); // Gets the value of 'search_term'
+
+    if (searchTerm) {
+        // Display the search term or perform a search
+        console.log("Searching for:", searchTerm);
+        // Example: Display the search term on the page
+        document.getElementById('results').innerText = "Showing results for: " + searchTerm;
+    }
+</script>
+
+<!-- Example content to display results -->
+<div id="results"></div>
+
+	
+
+
+</body>
 </html>
+
 
 
 
