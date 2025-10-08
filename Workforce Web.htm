@@ -331,92 +331,84 @@ body {background-color: #000833;}
 
 <script>
 function highlightText(container, text) {
-  // Remove previous highlights
-  const highlights = container.querySelectorAll('span.highlight');
-  highlights.forEach(span => {
+  // Clear existing highlights
+  const highlighted = container.querySelectorAll("span.highlight");
+  highlighted.forEach(span => {
     const parent = span.parentNode;
     parent.replaceChild(document.createTextNode(span.textContent), span);
-    parent.normalize();
+    parent.normalize(); // Merge adjacent text nodes
   });
 
   if (!text) return;
 
-  const safeText = text.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
-  const regex = new RegExp(safeText, 'gi');
+  const safeSearch = text.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const regex = new RegExp(safeSearch, 'gi');
 
   function walk(node) {
     if (node.nodeType === Node.TEXT_NODE) {
-      if (regex.test(node.nodeValue)) {
-        const frag = document.createDocumentFragment();
-        let lastIndex = 0;
-        node.nodeValue.replace(regex, (match, index) => {
-          // Add text before match
-          frag.appendChild(document.createTextNode(node.nodeValue.substring(lastIndex, index)));
-          // Create highlight span
-          const span = document.createElement('span');
-          span.className = 'highlight';
-          span.style.backgroundColor = 'yellow';
-          span.textContent = match;
-          frag.appendChild(span);
-          lastIndex = index + match.length;
+      if (node.nodeValue.match(regex)) {
+        const replacedText = node.nodeValue.replace(regex, match => {
+          return `<span class="highlight" style="background-color: yellow;">${match}</span>`;
         });
-        // Add remaining text after last match
-        frag.appendChild(document.createTextNode(node.nodeValue.substring(lastIndex)));
-        node.parentNode.replaceChild(frag, node);
+
+        const temp = document.createElement('span');
+        temp.innerHTML = replacedText;
+
+        while (temp.firstChild) {
+          const inserted = node.parentNode.insertBefore(temp.firstChild, node);
+          // 🔓 Auto-expand if inside a collapsed toggle section
+          expandIfInsideCollapsed(inserted);
+        }
+
+        node.parentNode.removeChild(node);
       }
-    } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE') {
+    } else if (
+      node.nodeType === Node.ELEMENT_NODE &&
+      node.tagName !== 'SCRIPT' &&
+      node.tagName !== 'STYLE'
+    ) {
       for (let i = 0; i < node.childNodes.length; i++) {
         walk(node.childNodes[i]);
       }
     }
   }
 
-  // Expand collapsed toggles if highlight is inside
+  // 🔓 Expand parent toggle if collapsed
   function expandIfInsideCollapsed(node) {
     let parent = node.parentElement;
     while (parent) {
       if (parent.classList.contains('toggle-content') && !parent.classList.contains('show')) {
         parent.classList.add('show');
+        // Change the icon from "+" to "−"
         const toggleBtn = parent.previousElementSibling;
         const icon = toggleBtn.querySelector('.toggle-icon');
-        if (icon) icon.innerHTML = '&minus;';
+        if (icon) {
+          icon.innerHTML = '&minus;';
+        }
       }
       parent = parent.parentElement;
     }
   }
 
   walk(container);
-
-  // Expand all toggles that have highlights inside
-  const highlights = container.querySelectorAll('span.highlight');
-  highlights.forEach(expandIfInsideCollapsed);
 }
 
-const input = document.getElementById('myInput');
-const btn = document.getElementById('myBtn');
-const content = document.getElementById('content');
+const input = document.getElementById("myInput");
+const btn = document.getElementById("myBtn");
+const content = document.getElementById("content");
 
-input.addEventListener('keypress', e => {
-  if (e.key === 'Enter') {
-    e.preventDefault();
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
     btn.click();
   }
 });
 
-btn.addEventListener('click', () => {
+btn.addEventListener("click", function () {
   const searchText = input.value.trim();
   highlightText(content, searchText);
-
-  // Scroll to first highlight
-  if (searchText) {
-    const firstHighlight = content.querySelector('span.highlight');
-    if (firstHighlight) {
-      firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  }
-});
+    });
 </script>
-
 
 
 
@@ -444,7 +436,6 @@ btn.addEventListener('click', () => {
 
 </body>
 </html>
-
 
 
 
