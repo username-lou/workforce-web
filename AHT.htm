@@ -396,6 +396,33 @@ btn.addEventListener("click", function () {
   const searchText = input.value.trim();
   highlightText(content, searchText);
 });
+
+	
+document.getElementById('searchButton').addEventListener('click', function() {
+    const searchTerm = document.getElementById('myInput').value;
+    const contentDiv = document.getElementById('myBtn');
+    let originalContent = contentDiv.innerHTML; // Store original content to restore later
+
+    // Remove any previous highlights
+    contentDiv.innerHTML = originalContent.replace(/<mark>/g, '').replace(/<\/mark>/g, '');
+
+    if (searchTerm) {
+        const regex = new RegExp(searchTerm, 'gi'); // 'g' for global, 'i' for case-insensitive
+        let highlightedContent = contentDiv.innerHTML.replace(regex, function(match) {
+            return `<mark>${match}</mark>`;
+        });
+        contentDiv.innerHTML = highlightedContent;
+
+        // Scroll to the first highlighted instance
+        const firstMark = contentDiv.querySelector('mark');
+        if (firstMark) {
+            firstMark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+});
+
+
+	
 </script>
 
 
@@ -423,6 +450,7 @@ btn.addEventListener("click", function () {
 </body>
 
 </html>
+
 
 
 
