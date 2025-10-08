@@ -95,10 +95,12 @@ body {background-color: #000833;}
 		height: 50px;
 		background: transparent;
 		}
-
 	.highlight {
 		background-color: yellow;
     		font-weight: bold;
+	mark {
+    background-color: yellow;
+    color: black;
   		}
 </style>
 
@@ -398,9 +400,9 @@ btn.addEventListener("click", function () {
 });
 
 	
-document.getElementById('searchButton').addEventListener('click', function() {
+document.getElementById('myBtn').addEventListener('click', function() {
     const searchTerm = document.getElementById('myInput').value;
-    const contentDiv = document.getElementById('myBtn');
+    const contentDiv = document.getElementById('search');
     let originalContent = contentDiv.innerHTML; // Store original content to restore later
 
     // Remove any previous highlights
@@ -450,6 +452,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
 </body>
 
 </html>
+
 
 
 
