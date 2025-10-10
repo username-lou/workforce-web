@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports CS</title>
+</head>
+
+
+<style>
+body {background-color: #000833;}
+</style>
+
+
+<body>
+
+<div id="content">
+
+<style>
+    header {
+      display: flex;              
+      align-items: center;        
+      padding: 2px;
+      background-color: #FFFFFF;
+      width: 1920px;
+    }
+    header img {
+      height: 70px;              
+      margin-right: 15px;  
+      margin: 0;
+    }
+</style>
+
+
+<header>
+ 	<a href="Workforce Web.htm"><img src="Images/WFM3.jpg"></a>
+	<h1>&nbsp;&nbsp;&nbsp;Workforce Management</h1>
+</header>
+
+
+<!-- Search Button -->
+
+<style>
+		*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: Calibri;
+		}
+	.search{
+		width: 14%;
+		display: flex;
+		align-items: left;
+		background: transparent;
+		background-image: linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9)), url(Desktop/Search.png);
+		transition: background 0.25s;
+		}
+	.search-bar{
+		width: 100%;
+		max-width: 700px;
+		background: transparent;
+		display: flex;
+		align-items: center;
+		border-radius: 60px;
+		padding: 10px 3px;
+		}
+	.search-bar input{
+		background: white;
+		flex: 1;
+		border: 0;
+		outline: none;
+		padding: 10px 20px;
+		font-size: 14px;
+		color: black;
+		}
+	::placeholder{
+		color: #ccc;
+		}
+	.search-bar button img{
+		padding: 10px 10px;
+		height: 100%;
+		}
+	.search-bar button img:hover {
+  		text-decoration: underline;
+  		color: black;                
+  		background-color: #007BFF;
+  		cursor: pointer;
+  		border-radius: 8px;
+		}
+	.search-bar button{
+		border: 0;
+		border-radius: 80%
+		width: 60px;
+		height: 50px;
+		background: transparent;
+		}
+
+	.highlight {
+		background-color: yellow;
+    		font-weight: bold;
+  		}
+</style>
+
+<div class="search">
+<div class="search-bar">
+<input id="myInput" placeholder="Keywords">
+<button id="myBtn"><img src="Images/Search.png"></button>
+</div>
+</div>
+
+
+<!-- Collapse/Expand -->
+
+<style>
+    .horizontal-menu {
+	display: flex;
+	gap: 1px;
+    	}
+    .wrapper {
+  	width: 220px;
+  	font-family: Calibri;
+	}
+   .item-main {
+  	border: 1px solid #ccc;
+  	margin-bottom: 5px;
+  	border-radius: 4px;
+  	background-color: #f5f5f5;
+  	overflow: hidden;
+	}
+  .toggle-btn {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	padding: 12px;
+  	cursor: pointer;
+  	background-color: #ADD8E6;
+	}
+  .toggle-btn-name {
+  	text-decoration: none; 
+  	color: black;           
+  	transition: all 0.1s ease;
+	}
+ .toggle-btn-name:hover {
+  	text-decoration: underline;
+  	color: white;                
+  	background-color: #007BFF;
+  	cursor: pointer;
+  	border-radius: 4px;
+	}
+  .toggle-content {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 10px 20px;
+	background-color: #fafafa;
+	}
+  .toggle-content li {
+  	padding: 4px 0;
+	font-size: 14px;
+	}
+   .toggle-content.show {
+	display: block;
+	}
+</style>
+
+<nav class="horizontal-menu">
+
+<div class="wrapper">
+<div class="item-main">
+<div class="hover-item">
+  	<div class="toggle-btn">
+    	<a href="Workforce Web.htm"><span class="toggle-btn-name"><b><u>Home</u></b></span></a>
+     </div>
+   </div>
+</div>
+
+<div class="wrapper">
+  <div class="item-main">
+    <div class="toggle-btn" data-expand="0">
+      <span class="toggle-btn-name"><b><u>Staff</u></b></span>
+      <span class="toggle-icon">&plus;</span>
+    </div>
+    <ul class="toggle-content">
+	<li><a href="Leaders.htm"><summary>Leaders</summary></a></li>
+	<li><a href="Realtime.htm"><summary>Realtime Analyst</summary></a></li>
+	<li><a href="Reports.htm"><summary>Reports Analyst</summary></a></li>
+	<li><a href="Scheduler.htm"><summary>Scheduler</summary></a></li>
+	<li><a href="Org Chart.htm">Org Chart</a></li>
+    </ul>
+</div>
+
+<div class="wrapper">
+  <div class="item-main">
+    <div class="toggle-btn" data-expand="0">
+      <span class="toggle-btn-name"><b><u>Terminology</u></b></span>
+      <span class="toggle-icon">&plus;</span>
+    </div>
+    <ul class="toggle-content">
+        <li><a href="Adherence.htm">Adherence</a></li>
+        <li><a href="AHT.htm">AHT</a></li>
+        <li><a href="ASA.htm">Average Speed Answer</a></li>
+		<li><a href="Attrition.htm">Attrition</a></li>
+        <li><a href="Call Abandon.htm">Call Abandon</a></li>
+		<li><a href="Call Routing.htm">Call Routing</a></li>
+        <li><a href="Call Volume Forecast.htm">Call Volume Forecast</a></li>
+        <li><a href="Capacity Planning.htm">Capacity Planning</a></li>
+        <li><a href="Conformance.htm">Conformance</a></li>
+        <li><a href="First Call Reso.htm">First Call Resolution</a></li>
+        <li><a href="Productivity.htm">Productivity</a></li>
+        <li><a href="Occupancy.htm">Occupancy</a></li>
+        <li><a href="Required FTE.htm">Required FTE</a></li>
+        <li><a href="Required Avail FTE.htm">Required Available FTE</a></li>
+        <li><a href="Service Level.htm">Service Level</a></li>
+        <li><a href="Show Rate.htm">Show Rate</a></li>
+        <li><a href="Shrinkage.htm">Shrinkage</a></li>
+		<li><a href="Utilization.htm">Utilization</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="item-main">
+    <div class="toggle-btn" data-expand="0">
+      <span class="toggle-btn-name"><b><u>Reports and Dashboards</u></b></span>
+      <span class="toggle-icon">&plus;</span>
+    </div>
+    <ul class="toggle-content">
+        <li><a href="Report Files (CS).htm">Servicing</a></li>
+        <li><a href="Report Files (Non-CS).htm">Non-Servicing</a></li>
+	<li><a href="Report Files (Combined).htm">Combined</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Main Content Area -->
+
+<style>
+    body {
+      margin: 0;
+      font-family: Calibri;
+    	}
+    main.center-top {
+      align-items: flex-start;
+      padding: 0px 20px 10px;
+    	}
+    .main-content {
+  	width: 1650px;
+  	height: 700px;
+  	overflow-y: auto; 
+  	margin: 0 auto;
+  	padding: 15px;
+  	background-color: #FFFFFF;
+	}
+   .container {
+      display: flex;
+      justify-content: start;
+      gap: 300px;
+      padding: 20px;
+    	}
+    .column {
+      width: 450px;
+	}
+    h3 {
+      margin-top: 0;
+	}
+   .no-wrap-text{
+	white-space: nowrap;
+	}
+   ul {
+    padding-left: 200px;
+    margin: 0;
+  	}
+  li {
+    position: fix;
+    margin-bottom: 1em;
+    text-indent: 10px;
+  	}
+   .person {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    .person img {
+        height: 40px;
+        margin-right: 5px;
+    }
+   .person2 {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    .person2 img {
+        height: 100px;
+        margin-right: 5px;
+	width: 2000px;
+    }
+</style>
+
+<article>
+<main class="center-top">
+	<div class="main-content" id="main-content">
+		<li class="person2"><img src="PNMAC.png"></li>
+		<hr>
+<div class="container">
+<div class="column">
+<div class="no-wrap-text">
+<h1><font size=5><p style="color:#4682B4;">Reports & Dashboards:</p></font></h1>
+	<br></br>
+    <ul>
+      <a href="https://drive.google.com/drive/folders/15r-M5F_DrONg9PX05kLzTKfZ6p0JR9Sh"><li class="person"><img src="Images/Attendance.png"><span><b>WNS Pennymac Attendance Report</b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1vlybG2K5wL-1Q5QEiPchE_o3BF-F3ldJ"><li class="person"><img src="Images/Adherence.png"><span><b>WNS PennyMac MTD Adherence Report</b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1KdDeXat8NoOcj8m-7drDjuuFUwDu-Xe8"><li class="person"><img src="Images/Prod Dash.png"><span><b>Productivity Dashboard</b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1KkYCYOPnsXEKgFZvLEPhVaBOgZOHf1NJ"><li class="person"><img src="Images/Vendor.png"><span><b>Vendor's Scorecard</b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1KkYCYOPnsXEKgFZvLEPhVaBOgZOHf1NJ"><li class="person"><img src="Images/Sup Call.png"><span><b>WNS Pennymac Supervisor Call Tracker</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1NUxCyB4AVoZlDeTG_upyT1kdvRMwE4zh"><li class="person"><img src="Images/Multi Log-Out.png"><span><b>WNS PennyMac Servicing Multiple Log-out Instance Report</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1kZ-7368jbSxZG9as_m2y_cJTjyNVD2O-"><li class="person"><img src="Images/Proper Log Off.png"><span><b>WNS PennyMac Proper Log Off EOD Report</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1lrsXuGnDLdNruc-Zy7OgTWT2SKpPWyKX"><li class="person"><img src="Images/Conso Sys.png"><span><b>WNS PennyMac Consolidated System Issue Report</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1OcTyc04zDjt6G0a2bCVb2pwL-KKSRqsD"><li class="person"><img src="Images/PS Dash.png"><span><b>PennySaved Dashboard</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/10GVinzr07G4-jiaaGl0y50Olnb6d75Qq"><li class="person"><img src="Images/Outliers.png"><span><b>WNS PennyMac Servicing Performance Outliers Report</b></span></li></a>	
+	<a href="https://drive.google.com/drive/folders/16bTUgvIn90PNWH-4M-kESoAC1HQo_KTm"><li class="person"><img src="Images/Perf Review.png"><span><b>PennyMac's Performance Review Report</b></span></li></a>
+    </ul>
+<br></br>
+<br></br>
+<h1><font size=5><p style="color:#4682B4;">Links:</p></font></h1>
+
+
+
+<br></br>
+</div>
+</div>
+<div class="column">
+<div class="no-wrap-text">
+	<br></br>
+	<br></br>
+    <ul>
+      <a href="https://drive.google.com/drive/folders/1L_j3QOMWdOma9Tw950n4uuewFmGIL_Kk"><li class="person"><img src="Images/Perf Dash.png"><span><b>Performance Dashboard</b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/11GUnvaJQGnPGYiORXiQebSIuHtJtVToe"><li class="person"><img src="Images/Serv SC.png"><span><b>WNS PennyMac Servicing Scorecard</b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1SXZ9FAfFeWp3pXuEltUs27ejAYARPOE0"><li class="person"><img src="Images/Coaching.png"><span><b>WNS PennyMac Coaching Logs</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1ZTUKS7mxdsihnBhw9tZ5pcS_8_QTCV8O"><li class="person"><img src="Images/Absenteeism.png"><span><b>WNS PennyMac Servicing Absenteeism Report with Tardy</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/11GUnvaJQGnPGYiORXiQebSIuHtJtVToe"><li class="person"><img src="Images/SC Agent,AM,DM.png"><span><b>WNS PennyMac Servicing Scorecard (Agents, AMs, DMs)</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1-Wa_beGz9FvnAJoT0yWXRF3t1DESlASR"><li class="person"><img src="Images/RDOT Incentive.png"><span><b>WNS PennyMac RDOT Incentive</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1pF1D2r2mhXVwb8Gk7CKIT_oAh6XbwT83"><li class="person"><img src="Images/Kicker.png"><span><b>WNS PennyMac Attendance & PennySaved Kicker</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1l4vYuYvgzwIgO8FS1uIa-hbWgY8cSOCq"><li class="person"><img src="Images/SM DNP Incentive.png"><span><b>WNS PennyMac SM DNP & Productivity Incentive</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1crykx5aPzgOSWXQ_bzQvA0oRw3LwdHhF"><li class="person"><img src="Images/Tech Tardy.png"><span><b>WNS PennyMac Tech Tardy vs Regular Tardy Report</b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1RsdUFUsd1smraX45bjM5liT15DAxZUGa"><li class="person"><img src="Images/Extend Wrap.png"><span><b>WNS PennyMac Excessive Extended Wrap Report</b></span></li></a>
+    </ul>
+</div>
+</main>
+</article>
+
+
+
+
+
+
+
+</nav>
+
+<hr style="border: none; height: 4px; background-color: #ffffff; margin: 20px 0;">
+
+
+
+ <!-- Sidebar (Optional) -->
+
+  <aside>
+    <p><font color=white>Additional information, links, or ads go here.</font></p>
+  </aside>
+
+<!-- Footer -->
+  <footer>
+    <p><font color=white>&copy; 2025 Pennymac Workforce Management. All rights reserved.</font></p>
+  </footer>
+</div>
+
+
+
+
+<!--Script Search -->
+
+<script>
+function highlightText(container, text) {
+  // Clear existing highlights
+  const highlighted = container.querySelectorAll("span.highlight");
+  highlighted.forEach(span => {
+    const parent = span.parentNode;
+    parent.replaceChild(document.createTextNode(span.textContent), span);
+    parent.normalize(); // Merge adjacent text nodes
+  });
+
+  if (!text) return;
+
+  const safeSearch = text.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const regex = new RegExp(safeSearch, 'gi');
+
+  function walk(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      if (node.nodeValue.match(regex)) {
+        const replacedText = node.nodeValue.replace(regex, match => {
+          return `<span class="highlight" style="background-color: yellow;">${match}</span>`;
+        });
+
+        const temp = document.createElement('span');
+        temp.innerHTML = replacedText;
+
+        while (temp.firstChild) {
+          const inserted = node.parentNode.insertBefore(temp.firstChild, node);
+          // 🔓 Auto-expand if inside a collapsed toggle section
+          expandIfInsideCollapsed(inserted);
+        }
+
+        node.parentNode.removeChild(node);
+      }
+    } else if (
+      node.nodeType === Node.ELEMENT_NODE &&
+      node.tagName !== 'SCRIPT' &&
+      node.tagName !== 'STYLE'
+    ) {
+      for (let i = 0; i < node.childNodes.length; i++) {
+        walk(node.childNodes[i]);
+      }
+    }
+  }
+
+  // 🔓 Expand parent toggle if collapsed
+  function expandIfInsideCollapsed(node) {
+    let parent = node.parentElement;
+    while (parent) {
+      if (parent.classList.contains('toggle-content') && !parent.classList.contains('show')) {
+        parent.classList.add('show');
+        // Change the icon from "+" to "−"
+        const toggleBtn = parent.previousElementSibling;
+        const icon = toggleBtn.querySelector('.toggle-icon');
+        if (icon) {
+          icon.innerHTML = '&minus;';
+        }
+      }
+      parent = parent.parentElement;
+    }
+  }
+
+  walk(container);
+}
+
+const input = document.getElementById("myInput");
+const btn = document.getElementById("myBtn");
+const content = document.getElementById("content");
+
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    btn.click();
+  }
+});
+
+btn.addEventListener("click", function () {
+  const searchText = input.value.trim();
+  highlightText(content, searchText);
+});
+</script>
+
+
+
+
+<!--Script Collapse/Expand -->
+
+<script>
+  document.querySelectorAll('.toggle-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const content = this.nextElementSibling;
+      const icon = this.querySelector('.toggle-icon');
+
+      content.classList.toggle('show');
+      const isOpen = content.classList.contains('show');
+      icon.innerHTML = isOpen ? '&minus;' : '&plus;';
+    });
+  });
+</script>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
