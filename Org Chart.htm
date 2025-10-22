@@ -48,7 +48,7 @@ body {background-color: #000833;}
 		font-family: Calibri;
 		}
 	.search{
-		width: 17%;
+		width: 17.3%;
 		display: flex;
 		align-items: left;
 		background: transparent;
@@ -104,7 +104,7 @@ body {background-color: #000833;}
 <div class="search">
 <div class="search-bar">
 <input id="myInput" placeholder="Keywords">
-<button id="myBtn"><img src="Images/Search.png"></button>
+<button id="myBtn"><img src="Images/Search.png"></button>	
 </div>
 </div>
 
@@ -122,10 +122,11 @@ body {background-color: #000833;}
 	}
    .item-main {
   	border: 1px solid #ccc;
-  	margin-bottom: 5px;
+  	margin-bottom: 10px;
   	border-radius: 4px;
   	background-color: #f5f5f5;
   	overflow: hidden;
+	font-size: 18px;
 	}
   .toggle-btn {
   	display: flex;
@@ -145,18 +146,17 @@ body {background-color: #000833;}
   	color: white;                
   	background-color: #007BFF;
   	cursor: pointer;
-  	border-radius: 4px;
+  	border-radius: 2px;
 	}
   .toggle-content {
 	display: none;
-	list-style: none;
 	margin: 0;
-	padding: 10px 20px;
+	padding: 10px;
 	background-color: #fafafa;
 	}
   .toggle-content li {
-  	padding: 4px 0;
-	font-size: 14px;
+  	padding: 2px 0;
+	font-size: 16px;
 	}
    .toggle-content.show {
 	display: block;
@@ -182,9 +182,10 @@ body {background-color: #000833;}
     </div>
     <ul class="toggle-content">
 	<li><a href="Leaders.htm"><summary>Leaders</summary></a></li>
-	<li><a href="Realtime.htm"><summary>Realtime Analyst</summary></a></li>
-	<li><a href="Reports.htm"><summary>Reports Analyst</summary></a></li>
-	<li><a href="Scheduler.htm"><summary>Scheduler</summary></a></li>
+	<li><a href="Realtime.htm"><summary>Lead Associate</summary></a></li>
+	<li><a href="Reports.htm"><summary>Senior Executive</summary></a></li>
+	<li><a href="Scheduler.htm"><summary>Associates</summary></a></li>
+	<li><a href="Reports.htm"><summary>Executive</summary></a></li>
 	<li><a href="Org Chart.htm">Org Chart</a></li>
     </ul>
 </div>
@@ -218,7 +219,7 @@ body {background-color: #000833;}
     </ul>
   </div>
 </div>
-	
+
 <div class="wrapper">
   <div class="item-main">
     <div class="toggle-btn" data-expand="0">
@@ -247,6 +248,17 @@ body {background-color: #000833;}
     </ul>
   </div>
 </div>
+
+<div class="wrapper">
+ <div class="item-main">
+  <div class="hover-item">
+  	<div class="toggle-btn" data-expand="0">
+	<a href=""><span class="toggle-btn-name"><b><u>Initiatives</u></b></span></a>
+	</div>
+  </div>
+ </div>
+</div>
+	
 </div>
 </div>
 
@@ -268,6 +280,7 @@ body {background-color: #000833;}
   	margin: 0 auto;
   	padding: 15px;
   	background-color: #FFFFFF;
+	border-radius: 8px;
 	}
    .container {
       display: flex;
@@ -276,7 +289,7 @@ body {background-color: #000833;}
       padding: 20px;
     	}
     .column {
-      width: 200px;
+      width: 300px;
 	}
     h3 {
       margin-top: 0;
@@ -290,7 +303,7 @@ body {background-color: #000833;}
   	}
   li {
     position: fix;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     text-indent: 20px;
   	}
    .person {
@@ -299,12 +312,11 @@ body {background-color: #000833;}
         list-style: none;
     }
     .person img {
-        height: 100px;
-        margin-right: 30px;
+        height: 450px;
+        margin-right: 10px;
     }
 </style>
-
-
+	
 <article>
 <main class="center-top">
 	<div class="main-content" id="main-content">
@@ -445,6 +457,7 @@ btn.addEventListener("click", function () {
 </body>
 
 </html>
+
 
 
 
