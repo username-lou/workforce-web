@@ -328,25 +328,16 @@ body {background-color: #000833;}
         height: 440px;
         margin-right: 20px;
     }
-	.zoom-container {
-  width: 200px;
-  height: 200px;
-  background-color: lightblue;
-  margin: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: auto; /* Hides content that goes outside the container */
-}
-.zoom-element {
-  width: 200%;
-  height: 200%;
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
-}
-
-.zoom-element:hover {
-  transform: scale(1.2); /* Zooms in by 20% on hover */
-}
+    .zoom {
+  	background-color: none;
+  	transition: transform .2s; /* Animation */
+  	width: 200px;
+  	height: 200px;
+  	margin: 0 auto;
+	}
+   .zoom:hover {
+  	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
 </style>
 
 <article>
@@ -360,26 +351,30 @@ body {background-color: #000833;}
 <div class="column">
 <div class="no-wrap-text">
 <ul><p><a href="https://docs.google.com/spreadsheets/d/1kZmHfmeLzV_WKTSoXI7KLswtP2qwDfw_enak4fFwkBY/edit?gid=0#gid=0"><b><i>Aux Code</a></i></b></p></ul>
-	<div class="zoom-container">
- 	 <div class="zoom-element">
+	<div class="zoom">
       <a href="Images\Update1.png"><li class="person"><img src="Images\Update1.png"></a></li>
 	  	</div>
-	</div>
+
 </div>
 </div>
 
 <div class="column">
 <div class="no-wrap-text">
 <ul><p><a href="https://docs.google.com/spreadsheets/d/1kZmHfmeLzV_WKTSoXI7KLswtP2qwDfw_enak4fFwkBY/edit?gid=0#gid=0"><b><i>To Access Jira Form: Click Here</a></i></b></p></ul>
+	<div class="zoom">
       <a href="Images\Update2.png"><li class="person"><img src="Images\Update2.png"></a></li>
+		</div>
+	
 </div>
 </div>
 </div>
 
 <div class="column">
 <div class="no-wrap-text">
-<ul><p><a href="https://docs.google.com/spreadsheets/d/1kZmHfmeLzV_WKTSoXI7KLswtP2qwDfw_enak4fFwkBY/edit?gid=0#gid=0"><b><i>PS Anomaly</a> : </i></b>details details details</p></ul>	
+<ul><p><a href="https://docs.google.com/spreadsheets/d/1kZmHfmeLzV_WKTSoXI7KLswtP2qwDfw_enak4fFwkBY/edit?gid=0#gid=0"><b><i>PS Anomaly</a> : </i></b>details details details</p></ul>
+	<div class="zoom">
       <a href="Images\Update3.png"><li class="person"><img src="Images\Update3.png"></a></li>	
+		</div>
 </div>
 </div>
 </main>
@@ -535,6 +530,7 @@ btn.addEventListener("click", function () {
 
 </body>
 </html>
+
 
 
 
