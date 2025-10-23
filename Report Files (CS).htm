@@ -338,6 +338,14 @@ body {background-color: #000833;}
         margin-right: 5px;
 	width: 2000px;
     }
+	.zoom {
+  		background-color: none;
+  		transition: transform .2s; /* Animation */
+  		margin: 0 auto;
+	}
+   .zoom:hover {
+  		transform: scale(1.6); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
 </style>
 
 <article>
@@ -351,24 +359,24 @@ body {background-color: #000833;}
 <h1><font size=6><p style="color:#4682B4;">Servicing</p></font></h1>
 	<br></br>
     <ul>
-      <a href="https://drive.google.com/drive/folders/15r-M5F_DrONg9PX05kLzTKfZ6p0JR9Sh"><li class="person"><img src="Images/Attendance.png"><span><b><u>WNS Pennymac Attendance Report</u></b></span></li></a>
-      <a href="https://drive.google.com/drive/folders/1vlybG2K5wL-1Q5QEiPchE_o3BF-F3ldJ"><li class="person"><img src="Images/Adherence.png"><span><b><u>WNS PennyMac MTD Adherence Report</u></b></span></li></a>
-      <a href="https://drive.google.com/drive/folders/1KdDeXat8NoOcj8m-7drDjuuFUwDu-Xe8"><li class="person"><img src="Images/Prod Dash.png"><span><b><u>Productivity Dashboard</u></b></span></li></a>
-      <a href="https://drive.google.com/drive/folders/1KkYCYOPnsXEKgFZvLEPhVaBOgZOHf1NJ"><li class="person"><img src="Images/Vendor.png"><span><b><u>Vendor's Scorecard</u></b></span></li></a>
-      <a href="https://drive.google.com/drive/folders/1KkYCYOPnsXEKgFZvLEPhVaBOgZOHf1NJ"><li class="person"><img src="Images/Sup Call.png"><span><b><u>WNS Pennymac Supervisor Call Tracker</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1NUxCyB4AVoZlDeTG_upyT1kdvRMwE4zh"><li class="person"><img src="Images/Multi Log-Out.png"><span><b><u>WNS PennyMac Servicing Multiple Log-out Instance Report</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1kZ-7368jbSxZG9as_m2y_cJTjyNVD2O-"><li class="person"><img src="Images/Proper Log Off.png"><span><b><u>WNS PennyMac Proper Log Off EOD Report</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1lrsXuGnDLdNruc-Zy7OgTWT2SKpPWyKX"><li class="person"><img src="Images/Conso Sys.png"><span><b><u>WNS PennyMac Consolidated System Issue Report</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1OcTyc04zDjt6G0a2bCVb2pwL-KKSRqsD"><li class="person"><img src="Images/PS Dash.png"><span><b><u>PennySaved Dashboard</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/10GVinzr07G4-jiaaGl0y50Olnb6d75Qq"><li class="person"><img src="Images/Outliers.png"><span><b><u>WNS PennyMac Servicing Performance Outliers Report</u></b></span></li></a>	
-	<a href="https://drive.google.com/drive/folders/16bTUgvIn90PNWH-4M-kESoAC1HQo_KTm"><li class="person"><img src="Images/Perf Review.png"><span><b><u>PennyMac's Performance Review Report</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1Y2xT_r_DrHjTwM7UGILYd9xeY_S_qHT6"><li class="person"><img src="Images/Masterlist.png"><span><b><u>WNS PennyMac Masterlist</u></b></span></li></a>
-	<a href="https://docs.google.com/spreadsheets/d/1u88qd1Nd8nUuyfxhJxX9gGdYLCJ6ye81MhAmwH46dQc/edit?gid=1069046833#gid=1069046833"><li class="person"><img src="Images/VL Tracker.png"><span><b><u>WNS PennyMac Servicing VL Tracker</u></b></span></li></a>
-    <a href="https://docs.google.com/spreadsheets/d/1HcX8tL9whkD7-5Mf9kX9QU9NxWQHSEE0xr4_BQluhjU/edit?gid=352498702#gid=352498702"><li class="person"><img src="Images/LOA.png"><span><b><u>WNS PennyMac LOA/Absconding Tracker</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1VXt3PAKc3l-NDkQ-Pb0_gm9H2pgtWf4v"><li class="person"><img src="Images/Lead Sync.png"><span><b><u>Servcing WNS PennyMac Leadership Sync - MOM</u></b></span></li></a>
-	<a href="https://docs.google.com/spreadsheets/d/1Z5RPL-bBs4enaSgO4UjkYWTytBIkWOOnn8vIlW4MPSI/edit?gid=0#gid=0"><li class="person"><img src="Images/OT and RDOT.png"><span><b><u>WNS PennyMac OT/RDOT Tracker</u></b></span></li></a>
-	<a href="https://pennymac.atlassian.net/jira/core/projects/CMC/forms/form/direct/3979548879542699/10002"><li class="person"><img src="Images/Jira.png"><span><b><u>WNS PennyMac JIRA TAR Form</u></b></span></li></a>
-	<a href="https://docs.google.com/spreadsheets/d/13X_Gvp553V6KWkc-GhNp_dmOu7tlKefNiIGnVlsPkG4/edit?gid=960215914#gid=960215914"><li class="person"><img src="Images/User Info.png"><span><b><u>WNS PennyMac | Servcing User Information</u></b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/15r-M5F_DrONg9PX05kLzTKfZ6p0JR9Sh"><li class="person"><div class="zoom"><img src="Images/Attendance.png"></div><span><b><u>WNS Pennymac Attendance Report</u></b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1vlybG2K5wL-1Q5QEiPchE_o3BF-F3ldJ"><li class="person"><div class="zoom"><img src="Images/Adherence.png"></div><span><b><u>WNS PennyMac MTD Adherence Report</u></b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1KdDeXat8NoOcj8m-7drDjuuFUwDu-Xe8"><li class="person"><div class="zoom"><img src="Images/Prod Dash.png"></div><span><b><u>Productivity Dashboard</u></b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1KkYCYOPnsXEKgFZvLEPhVaBOgZOHf1NJ"><li class="person"><div class="zoom"><img src="Images/Vendor.png"></div><span><b><u>Vendor's Scorecard</u></b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1KkYCYOPnsXEKgFZvLEPhVaBOgZOHf1NJ"><li class="person"><div class="zoom"><img src="Images/Sup Call.png"></div><span><b><u>WNS Pennymac Supervisor Call Tracker</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1NUxCyB4AVoZlDeTG_upyT1kdvRMwE4zh"><li class="person"><div class="zoom"><img src="Images/Multi Log-Out.png"></div><span><b><u>WNS PennyMac Servicing Multiple Log-out Instance Report</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1kZ-7368jbSxZG9as_m2y_cJTjyNVD2O-"><li class="person"><div class="zoom"><img src="Images/Proper Log Off.png"></div><span><b><u>WNS PennyMac Proper Log Off EOD Report</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1lrsXuGnDLdNruc-Zy7OgTWT2SKpPWyKX"><li class="person"><div class="zoom"><img src="Images/Conso Sys.png"></div><span><b><u>WNS PennyMac Consolidated System Issue Report</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1OcTyc04zDjt6G0a2bCVb2pwL-KKSRqsD"><li class="person"><div class="zoom"><img src="Images/PS Dash.png"></div><span><b><u>PennySaved Dashboard</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/10GVinzr07G4-jiaaGl0y50Olnb6d75Qq"><li class="person"><div class="zoom"><img src="Images/Outliers.png"></div><span><b><u>WNS PennyMac Servicing Performance Outliers Report</u></b></span></li></a>	
+	<a href="https://drive.google.com/drive/folders/16bTUgvIn90PNWH-4M-kESoAC1HQo_KTm"><li class="person"><div class="zoom"><img src="Images/Perf Review.png"></div><span><b><u>PennyMac's Performance Review Report</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1Y2xT_r_DrHjTwM7UGILYd9xeY_S_qHT6"><li class="person"><div class="zoom"><img src="Images/Masterlist.png"></div><span><b><u>WNS PennyMac Masterlist</u></b></span></li></a>
+	<a href="https://docs.google.com/spreadsheets/d/1u88qd1Nd8nUuyfxhJxX9gGdYLCJ6ye81MhAmwH46dQc/edit?gid=1069046833#gid=1069046833"><li class="person"><div class="zoom"><img src="Images/VL Tracker.png"></div><span><b><u>WNS PennyMac Servicing VL Tracker</u></b></span></li></a>
+    <a href="https://docs.google.com/spreadsheets/d/1HcX8tL9whkD7-5Mf9kX9QU9NxWQHSEE0xr4_BQluhjU/edit?gid=352498702#gid=352498702"><li class="person"><div class="zoom"><img src="Images/LOA.png"></div><span><b><u>WNS PennyMac LOA/Absconding Tracker</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1VXt3PAKc3l-NDkQ-Pb0_gm9H2pgtWf4v"><li class="person"><div class="zoom"><img src="Images/Lead Sync.png"></div><span><b><u>Servcing WNS PennyMac Leadership Sync - MOM</u></b></span></li></a>
+	<a href="https://docs.google.com/spreadsheets/d/1Z5RPL-bBs4enaSgO4UjkYWTytBIkWOOnn8vIlW4MPSI/edit?gid=0#gid=0"><li class="person"><div class="zoom"><img src="Images/OT and RDOT.png"></div><span><b><u>WNS PennyMac OT/RDOT Tracker</u></b></span></li></a>
+	<a href="https://pennymac.atlassian.net/jira/core/projects/CMC/forms/form/direct/3979548879542699/10002"><li class="person"><div class="zoom"><img src="Images/Jira.png"></div><span><b><u>WNS PennyMac JIRA TAR Form</u></b></span></li></a>
+	<a href="https://docs.google.com/spreadsheets/d/13X_Gvp553V6KWkc-GhNp_dmOu7tlKefNiIGnVlsPkG4/edit?gid=960215914#gid=960215914"><li class="person"><div class="zoom"><img src="Images/User Info.png"></div><span><b><u>WNS PennyMac | Servcing User Information</u></b></span></li></a>
 	</ul>
 <br></br>
 <br></br>
@@ -380,24 +388,24 @@ body {background-color: #000833;}
 	<br></br>
 	<br></br>
     <ul>
-      <a href="https://drive.google.com/drive/folders/1L_j3QOMWdOma9Tw950n4uuewFmGIL_Kk"><li class="person"><img src="Images/Perf Dash.png"><span><b><u>Performance Dashboard</u></b></span></li></a>
-      <a href="https://drive.google.com/drive/folders/11GUnvaJQGnPGYiORXiQebSIuHtJtVToe"><li class="person"><img src="Images/Serv SC.png"><span><b><u>WNS PennyMac Servicing Scorecard</u></b></span></li></a>
-      <a href="https://drive.google.com/drive/folders/1SXZ9FAfFeWp3pXuEltUs27ejAYARPOE0"><li class="person"><img src="Images/Coaching Log.png"><span><b><u>WNS PennyMac Coaching Logs</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1ZTUKS7mxdsihnBhw9tZ5pcS_8_QTCV8O"><li class="person"><img src="Images/Absenteeism.png"><span><b><u>WNS PennyMac Servicing Absenteeism Report with Tardy</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/11GUnvaJQGnPGYiORXiQebSIuHtJtVToe"><li class="person"><img src="Images/SC Agent,AM,DM.png"><span><b><u>WNS PennyMac Servicing Scorecard (Agents, AMs, DMs)</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1-Wa_beGz9FvnAJoT0yWXRF3t1DESlASR"><li class="person"><img src="Images/RDOT Incentive.png"><span><b><u>WNS PennyMac RDOT Incentive</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1pF1D2r2mhXVwb8Gk7CKIT_oAh6XbwT83"><li class="person"><img src="Images/Kicker.png"><span><b><u>WNS PennyMac Attendance & PennySaved Kicker</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1l4vYuYvgzwIgO8FS1uIa-hbWgY8cSOCq"><li class="person"><img src="Images/SM DNP Incentive.png"><span><b><u>WNS PennyMac SM DNP & Productivity Incentive</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1crykx5aPzgOSWXQ_bzQvA0oRw3LwdHhF"><li class="person"><img src="Images/Tech Tardy.png"><span><b><u>WNS PennyMac Tech Tardy vs Regular Tardy Report</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1RsdUFUsd1smraX45bjM5liT15DAxZUGa"><li class="person"><img src="Images/Extend Wrap.png"><span><b><u>WNS PennyMac Excessive Extended Wrap Report</u></b></span></li></a>
-	<a href="https://docs.google.com/spreadsheets/d/1kZdSV2mASpXR0Qxp5-ysBze73_hHu7d9F8OhzlSMlKk/edit?gid=694504995#gid=694504995"><li class="person"><img src="Images/Calendar.png"><span><b><u>WNS 2025 Calendar</u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1lrsXuGnDLdNruc-Zy7OgTWT2SKpPWyKX"><li class="person"><img src="Images/Conso Sys.png"><span><b><u>Consolidated System Issue and No Station Tracker</u></b></span></li></a>	
-   <a href="https://docs.google.com/spreadsheets/d/1XNE7oXyk-LnkPPIvdm_3CVuYrFlOGTfEbRL1MSv14r8/edit?gid=2034851941#gid=2034851941"><li class="person"><img src="Images/DNS.png"><span><b><u>WNS PennyMac DNS AM Schedule Tracker</u></b></span></li></a>
-	<a href="https://docs.google.com/spreadsheets/d/1Ucq7m-1bWox6ZTaVrDcAJ-ujHiwg6B7lKcQKoCIqKeg/edit?gid=1946431484#gid=1946431484"><li class="person"><img src="Images/OJT Pull Out.png"><span><b><u>WNS PennyMac OJT - Pull Out Request</u></b></span></li></a>
-	<a href="https://forms.gle/v7AbMkV1mmPxge7j8"><li class="person"><img src="Images/Clinic.png"><span><b><u>WNS PennyMac Clinic log-out Form</u></b></span></li></a>
-	<a href="https://docs.google.com/spreadsheets/d/1LH-z5GPbV00Rp8-zg5DyJEVvciVUNQpf/edit?gid=2074778420#gid=2074778420"><li class="person"><img src="Images/Demographics.png"><span><b><u>WNS PennyMac Employee Demographis</u></b></span></li></a>
-	<a href="https://docs.google.com/spreadsheets/d/1RjlqiDc2n5P24bjd4k2J1cIOZoyqxqHHuTZ2Qs7LnPE/edit?gid=135614291#gid=135614291"><li class="person"><img src="Images/Roster.png"><span><b><u>PennyMac Team Roster (WNS)</u></b></span></li></a>
-	<a href="https://docs.google.com/spreadsheets/d/1JF_f2bnxPkqXTTsX1Nh7oWPgrBr8aDtT-ma0WWRzaOU/edit?gid=1835304541#gid=1835304541"><li class="person"><img src="Images/Plotted.png"><span><b><u>WNS Plotted Activity Tracker</u></b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1L_j3QOMWdOma9Tw950n4uuewFmGIL_Kk"><li class="person"><div class="zoom"><img src="Images/Perf Dash.png"></div><span><b><u>Performance Dashboard</u></b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/11GUnvaJQGnPGYiORXiQebSIuHtJtVToe"><li class="person"><div class="zoom"><img src="Images/Serv SC.png"></div><span><b><u>WNS PennyMac Servicing Scorecard</u></b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1SXZ9FAfFeWp3pXuEltUs27ejAYARPOE0"><li class="person"><div class="zoom"><img src="Images/Coaching Log.png"></div><span><b><u>WNS PennyMac Coaching Logs</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1ZTUKS7mxdsihnBhw9tZ5pcS_8_QTCV8O"><li class="person"><div class="zoom"><img src="Images/Absenteeism.png"></div><span><b><u>WNS PennyMac Servicing Absenteeism Report with Tardy</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/11GUnvaJQGnPGYiORXiQebSIuHtJtVToe"><li class="person"><div class="zoom"><img src="Images/SC Agent,AM,DM.png"></div><span><b><u>WNS PennyMac Servicing Scorecard (Agents, AMs, DMs)</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1-Wa_beGz9FvnAJoT0yWXRF3t1DESlASR"><li class="person"><div class="zoom"><img src="Images/RDOT Incentive.png"></div><span><b><u>WNS PennyMac RDOT Incentive</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1pF1D2r2mhXVwb8Gk7CKIT_oAh6XbwT83"><li class="person"><div class="zoom"><img src="Images/Kicker.png"></div><span><b><u>WNS PennyMac Attendance & PennySaved Kicker</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1l4vYuYvgzwIgO8FS1uIa-hbWgY8cSOCq"><li class="person"><div class="zoom"><img src="Images/SM DNP Incentive.png"></div><span><b><u>WNS PennyMac SM DNP & Productivity Incentive</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1crykx5aPzgOSWXQ_bzQvA0oRw3LwdHhF"><li class="person"><div class="zoom"><img src="Images/Tech Tardy.png"></div><span><b><u>WNS PennyMac Tech Tardy vs Regular Tardy Report</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1RsdUFUsd1smraX45bjM5liT15DAxZUGa"><li class="person"><div class="zoom"><img src="Images/Extend Wrap.png"></div><span><b><u>WNS PennyMac Excessive Extended Wrap Report</u></b></span></li></a>
+	<a href="https://docs.google.com/spreadsheets/d/1kZdSV2mASpXR0Qxp5-ysBze73_hHu7d9F8OhzlSMlKk/edit?gid=694504995#gid=694504995"><li class="person"><div class="zoom"><img src="Images/Calendar.png"></div><span><b><u>WNS 2025 Calendar</u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1lrsXuGnDLdNruc-Zy7OgTWT2SKpPWyKX"><li class="person"><div class="zoom"><img src="Images/Conso Sys.png"></div><span><b><u>Consolidated System Issue and No Station Tracker</u></b></span></li></a>	
+   <a href="https://docs.google.com/spreadsheets/d/1XNE7oXyk-LnkPPIvdm_3CVuYrFlOGTfEbRL1MSv14r8/edit?gid=2034851941#gid=2034851941"><li class="person"><div class="zoom"><img src="Images/DNS.png"></div><span><b><u>WNS PennyMac DNS AM Schedule Tracker</u></b></span></li></a>
+	<a href="https://docs.google.com/spreadsheets/d/1Ucq7m-1bWox6ZTaVrDcAJ-ujHiwg6B7lKcQKoCIqKeg/edit?gid=1946431484#gid=1946431484"><li class="person"><div class="zoom"><img src="Images/OJT Pull Out.png"></div><span><b><u>WNS PennyMac OJT - Pull Out Request</u></b></span></li></a>
+	<a href="https://forms.gle/v7AbMkV1mmPxge7j8"><li class="person"><div class="zoom"><img src="Images/Clinic.png"></div><span><b><u>WNS PennyMac Clinic log-out Form</u></b></span></li></a>
+	<a href="https://docs.google.com/spreadsheets/d/1LH-z5GPbV00Rp8-zg5DyJEVvciVUNQpf/edit?gid=2074778420#gid=2074778420"><li class="person"><div class="zoom"><img src="Images/Demographics.png"></div><span><b><u>WNS PennyMac Employee Demographis</u></b></span></li></a>
+	<a href="https://docs.google.com/spreadsheets/d/1RjlqiDc2n5P24bjd4k2J1cIOZoyqxqHHuTZ2Qs7LnPE/edit?gid=135614291#gid=135614291"><li class="person"><div class="zoom"><img src="Images/Roster.png"></div><span><b><u>PennyMac Team Roster (WNS)</u></b></span></li></a>
+	<a href="https://docs.google.com/spreadsheets/d/1JF_f2bnxPkqXTTsX1Nh7oWPgrBr8aDtT-ma0WWRzaOU/edit?gid=1835304541#gid=1835304541"><li class="person"><div class="zoom"><img src="Images/Plotted.png"></div><span><b><u>WNS Plotted Activity Tracker</u></b></span></li></a>
 	</ul>
 </div>
 </main>
@@ -538,6 +546,7 @@ btn.addEventListener("click", function () {
 </body>
 
 </html>
+
 
 
 
