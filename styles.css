@@ -1,5 +1,6 @@
 body {  
     font-family: 'Poppins', sans-serif;
+    font-color: white;
     background-color: #000833;
 }
 
@@ -45,9 +46,10 @@ h1 {
 }
 
 #restartButton:hover {
-    background-color: #000000;
+    background-color: #FFFFE0;
     color: #FFFFFF;
 }
+
 
 
 
