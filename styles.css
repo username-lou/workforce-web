@@ -50,7 +50,7 @@ h1 {
 }
 header {
       display: flex;              
-      align-items: left;        
+      align-items: center;        
       padding: 2px 2px 2px;
       background-color: #ffffff;
       width: 1905px;
@@ -60,5 +60,6 @@ header img {
       margin-right: 15px;  
       margin: 0;
     }
+
 
 
