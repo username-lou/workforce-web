@@ -1,12 +1,12 @@
 body {  
     font-family: 'Poppins', sans-serif;
-    color: #FFA500;
-    background-color: #ccc;
+    color: black;
+    background-color: #87CEEB;
 }
 
 h1 {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #board {
@@ -50,6 +50,7 @@ h1 {
     background-color: #FFFFE0;
     color: #FFFFFF;
 }
+
 
 
 
