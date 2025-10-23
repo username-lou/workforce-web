@@ -337,6 +337,14 @@ body {background-color: #000833;}
         margin-right: 5px;
 	width: 2000px;
     }
+		.zoom {
+  		background-color: none;
+  		transition: transform .2s; /* Animation */
+  		margin: 0 auto;
+	}
+   .zoom:hover {
+  		transform: scale(1.6); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
 </style>
 
 <article>
@@ -350,7 +358,7 @@ body {background-color: #000833;}
 <h1><font size=6><p style="color:#4682B4;">Non-Servcing</p></font></h1>
 	<br></br>
     <ul>
-      <a href="https://drive.google.com/drive/folders/1dF9y4ecBnQQsoYwQzTl12i2JC6CL-8ZU"><li class="person"><img src="Images/VL Tracker.png"><span><b><u>VL Allocation</u></b></span></li></a>
+      <a href="https://drive.google.com/drive/folders/1dF9y4ecBnQQsoYwQzTl12i2JC6CL-8ZU"><li class="person"><div class="zoom"><img src="Images/VL Tracker.png"></div><span><b><u>VL Allocation</u></b></span></li></a>
 <!--
 		<a href="https://drive.google.com/drive/folders/1KdDeXat8NoOcj8m-7drDjuuFUwDu-Xe8"><li class="person"><img src="Images/Prod Dash.png"><span><b>Productivity Dashboard</b></span></li></a>
       <a href="https://drive.google.com/drive/folders/1KkYCYOPnsXEKgFZvLEPhVaBOgZOHf1NJ"><li class="person"><img src="Images/Vendor.png"><span><b>Vendor's Scorecard</b></span></li></a>
@@ -539,6 +547,7 @@ btn.addEventListener("click", function () {
 </body>
 
 </html>
+
 
 
 
