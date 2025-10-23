@@ -326,6 +326,14 @@ body {background-color: #000833;}
         height: 100px;
         margin-right: 30px;
     }
+	.zoom {
+  		background-color: none;
+  		transition: transform .2s; /* Animation */
+  		margin: 0 auto;
+	}
+   .zoom:hover {
+  		transform: scale(1.6); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
 </style>
 
 <article>
@@ -349,6 +357,7 @@ body {background-color: #000833;}
     </ul>
 </div>
 </div>
+	
 <div class="column">
 <div class="no-wrap-text">
 	<p style="color: blue; font-size: 18px; text-align: right;">
@@ -356,11 +365,12 @@ body {background-color: #000833;}
 	</p>
 	<br></br>
     <ul>
-      <a href="https://hcm44.sapsf.com/sf/liveprofile?selected_user_encoded=E3821D5879D94EF6818E20AB8B19CE76&_s.crb=3LkEzYBuVh9xwwg%2bSdFwZVE%2b%2bIy1hC9pZG%2fuSkmOv9g%3d"><li class="person"><img src="Images\Cham.png"><span>Charmie "Cham" Genoza</span></li></a>
-      <a href="https://hcm44.sapsf.com/sf/liveprofile?selected_user_encoded=7AA9A72DEC034096A098BC013D260475&_s.crb=3LkEzYBuVh9xwwg%2bSdFwZVE%2b%2bIy1hC9pZG%2fuSkmOv9g%3d"><li class="person"><img src="Images\Mac.png"><span>Mack Jose</span></li></a>
+      <a href="https://hcm44.sapsf.com/sf/liveprofile?selected_user_encoded=E3821D5879D94EF6818E20AB8B19CE76&_s.crb=3LkEzYBuVh9xwwg%2bSdFwZVE%2b%2bIy1hC9pZG%2fuSkmOv9g%3d"><li class="person"><div class="zoom"><img src="Images\Cham.png"></div><span>Charmie "Cham" Genoza</span></li></a>
+      <a href="https://hcm44.sapsf.com/sf/liveprofile?selected_user_encoded=7AA9A72DEC034096A098BC013D260475&_s.crb=3LkEzYBuVh9xwwg%2bSdFwZVE%2b%2bIy1hC9pZG%2fuSkmOv9g%3d"><li class="person"><div class="zoom"><img src="Images\Mac.png"></div><span>Mack Jose</span></li></a>
 	 </ul>
 </div>
 </div>
+	
 <div class="column">
 <div class="no-wrap-text">
    <p style="color: blue; font-size: 18px; text-align: right;">
@@ -369,7 +379,7 @@ body {background-color: #000833;}
 	<br></br>
     <ul>
 	<a href=""><li class="person"><img src=""><span>Debasis Mohanty</span></li></a>
-	<a href="https://hcm44.sapsf.com/sf/liveprofile?selected_user_encoded=88B9FF164ED54A8A9AB2855CF18C25A3&_s.crb=3LkEzYBuVh9xwwg%2bSdFwZVE%2b%2bIy1hC9pZG%2fuSkmOv9g%3d"><li class="person"><img src="Images\Lester.png"><span>Lester Evangelista</span></li></a>
+	<a href="https://hcm44.sapsf.com/sf/liveprofile?selected_user_encoded=88B9FF164ED54A8A9AB2855CF18C25A3&_s.crb=3LkEzYBuVh9xwwg%2bSdFwZVE%2b%2bIy1hC9pZG%2fuSkmOv9g%3d"><li class="person"><div class="zoom"><img src="Images\Lester.png"></div><span>Lester Evangelista</span></li></a>
 	</ul>
 </div>
 </div>
@@ -505,6 +515,7 @@ btn.addEventListener("click", function () {
 </body>
 
 </html>
+
 
 
 
