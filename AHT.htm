@@ -279,8 +279,13 @@ body {background-color: #000833;}
 <!-- Main Content Area -->
 
 <style>
+	@font-face {
+  		font-family: 'Argent'; /* Assign a custom name to the font */
+  		src: url("Fonts/Fontspring-DEMO-argentcf-bolditalic.otf") format('otf'),
+       url('path/to/your/argent-font.woff') format('otf');
     body {
       margin: 0;
+	font-family: 'Argent', serif;
     	}
     main.center-top {
       align-items: flex-start;
@@ -327,7 +332,7 @@ body {background-color: #000833;}
     .person img {
         height: 450px;
         margin-right: 10px;
-    }
+    }	
 </style>
 
 <article>
@@ -489,6 +494,7 @@ btn.addEventListener("click", function () {
 </body>
 
 </html>
+
 
 
 
