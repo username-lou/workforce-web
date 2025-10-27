@@ -31,12 +31,10 @@ body {background-color: #000833;}
     }
 </style>
 
-
 <header>
  	<a href="Workforce Web.htm"><img src="Images/WFM3.jpg"></a>
 	<h1>&nbsp;<a href="Workforce Web.htm"><img src="Images/WFM5.png"></a></h1>
 </header>
-
 
 <!-- Search Button -->
 
@@ -108,8 +106,49 @@ body {background-color: #000833;}
 </div>
 </div>
 
-
 <!-- Collapse/Expand -->
+
+<style>
+@font-face {
+	font-family: 'Empty'; 
+	src: url(Fonts/EmptyMegazineDemoRegular.ttf) format('truetype');
+	}
+</style>
+
+<style>
+@font-face {
+	font-family: 'Roma'; 
+	src: url(Fonts/ROMA-Regular.ttf) format('truetype');
+	}
+</style>
+
+<style>
+@font-face {
+	font-family: 'Button'; 
+	src: url(Fonts/Fontspring-DEMO-argentcf-thin.otf) format('opentype');
+	}
+</style>
+
+<style>
+@font-face {
+	font-family: 'Button2'; 
+	src: url(Fonts/Fontspring-DEMO-argentcf-thinitalic.otf) format('opentype');
+	}
+</style>
+
+<style>
+@font-face {
+	font-family: 'Header'; 
+	src: url(Fonts/Fontspring-DEMO-argentcf-bolditalic.otf) format('opentype');
+	}
+</style>
+
+<style>
+@font-face {
+	font-family: 'Content'; 
+	src: url(Fonts/Fontspring-DEMO-argentcf-thinitalic.otf) format('opentype');
+	}
+</style>
 
 <style>
     .horizontal-menu {
@@ -118,7 +157,6 @@ body {background-color: #000833;}
     	}
     .wrapper {
   	width: 280px;
-  	font-family: Calibri;
 	}
    .item-main {
   	border: 1px solid #ccc;
@@ -144,7 +182,7 @@ body {background-color: #000833;}
  .toggle-btn-name:hover {
   	text-decoration: underline;
   	color: white;                
-  	background-color: #007BFF;
+  	background-color: none;
   	cursor: pointer;
   	border-radius: 2px;
 	}
@@ -153,6 +191,7 @@ body {background-color: #000833;}
 	margin: 0;
 	padding: 10px;
 	background-color: #fafafa;
+	text-align: left;
 	}
   .toggle-content li {
   	padding: 2px 0;
@@ -161,119 +200,128 @@ body {background-color: #000833;}
    .toggle-content.show {
 	display: block;
 	}
+   .icon {
+        display: fix;
+	text-align: center;
+    	}
+    .icon img {
+        height: 40px;
+    	}
 </style>
 
 <nav class="horizontal-menu">
 
 <div class="wrapper">
 <div class="item-main">
-<div class="hover-item">
-  	<div class="toggle-btn">
-    	<a href="Workforce Web.htm"><span class="toggle-btn-name"><b><u>Home</u></b></span></a>
-     </div>
-   </div>
-</div>
-
-<div class="wrapper">
-  <div class="item-main">
-    <div class="toggle-btn" data-expand="0">
-      <span class="toggle-btn-name"><b><u>Staff</u></b></span>
-      <span class="toggle-icon">&plus;</span>
-    </div>
-    <ul class="toggle-content">
-	<li><a href="Leaders.htm"><summary>Leaders</summary></a></li>
-	<li><a href="Lead Assoc.htm"><summary>Lead Associate</summary></a></li>
-	<li><a href="Sr Exe.htm"><summary>Senior Executive</summary></a></li>
-	<li><a href="Assoc.htm"><summary>Associates</summary></a></li>
-	<li><a href="Exe.htm"><summary>Executive</summary></a></li>
-	<li><a href="Org Chart.htm">Org Chart</a></li>
-    </ul>
-</div>
-
-<div class="wrapper">
-  <div class="item-main">
-    <div class="toggle-btn" data-expand="0">
-      <span class="toggle-btn-name"><b><u>Terminology</u></b></span>
-      <span class="toggle-icon">&plus;</span>
-    </div>
-    <ul class="toggle-content">
-        <li><a href="Adherence.htm">Adherence</a></li>
-        <li><a href="AHT.htm">AHT</a></li>
-	<li><a href="Attrition.htm">Attrition</a></li>
-        <li><a href="ASA.htm">Average Speed Answer</a></li>
-        <li><a href="Call Abandon.htm">Call Abandon</a></li>
-	<li><a href="Call Routing.htm">Call Routing</a></li>
-        <li><a href="Call Volume Forecast.htm">Call Volume Forecast</a></li>
-        <li><a href="Capacity Planning.htm">Capacity Planning</a></li>
-        <li><a href="Conformance.htm">Conformance</a></li>
-        <li><a href="First Call Reso.htm">First Call Resolution</a></li>
-        <li><a href="Full-Time Equivalent.htm">Full-Time Equivalent</a></li>
-	<li><a href="Occupancy.htm">Occupancy</a></li>
-        <li><a href="Productivity.htm">Productivity</a></li>
-        <li><a href="Required Avail FTE.htm">Required Available FTE</a></li>
-	<li><a href="Required FTE.htm">Required FTE</a></li>
-        <li><a href="Service Level.htm">Service Level</a></li>
-        <li><a href="Shrinkage.htm">Shrinkage</a></li>
-        <li><a href="Show Rate.htm">Show Rate</a></li>
-	<li><a href="Utilization.htm">Utilization</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="wrapper">
-  <div class="item-main">
-    <div class="toggle-btn" data-expand="0">
-      <span class="toggle-btn-name"><b><u>Reports and Dashboards</u></b></span>
-      <span class="toggle-icon">&plus;</span>
-    </div>
-    <ul class="toggle-content">
-        <li><a href="Report Files (CS).htm">Servicing</a></li>
-        <li><a href="Report Files (Non-CS).htm">Non-Servicing</a></li>
-    </ul>
-  </div>
-</div>
-
-
-<div class="wrapper">
- <div class="item-main">
-  <div class="hover-item">
+<div class="icon">
   	<div class="toggle-btn" data-expand="0">
-	<a href="Highlight.htm"><span class="toggle-btn-name"><b><u>Highlights</u></b></span></a>
+    		<a href="Workforce Web.htm"><span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Home</p></u></b></span></a><img src="Icon/home.png">
+</div>
+</div>
+</div>
+
+<div class="wrapper">
+<div class="item-main">
+<div class="icon">
+<div class="toggle-btn" data-expand="0">
+    <span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Staff</p></u></b></span><img src="Icon/staff.png">
+    </div>
+    <ul class="toggle-content">
+	<li><a href="Leaders.htm"><summary><p style="font-family: 'Button2', serif;">Leaders</p></summary></a></li>
+	<li><a href="Sr Exe.htm"><summary><p style="font-family: 'Button2', serif;">Senior Executive</p></summary></a></li>
+	<li><a href="Exe.htm"><summary><p style="font-family: 'Button2', serif;">Executive</p></summary></a></li>
+	<li><a href="Org Chart.htm"><p style="font-family: 'Button2', serif;">Org Chart</p></a></li>
+    </ul>
+</div>
+</div>
+</div>
+
+<div class="wrapper">
+<div class="item-main">
+<div class="icon">
+<div class="toggle-btn" data-expand="0">
+    <span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Terminology</p></u></b></span><img src="Icon/terminology.png">
+    </div>
+    <ul class="toggle-content">
+        <li><a href="Adherence.htm"><p style="font-family: 'Button2', serif;">Adherence</p></a></li>
+        <li><a href="AHT.htm"><p style="font-family: 'Button2', serif;">AHT</p></a></li>
+	<li><a href="Attrition.htm"><p style="font-family: 'Button2', serif;">Attrition</p></a></li>
+        <li><a href="ASA.htm"><p style="font-family: 'Button2', serif;">Average Speed Answer</p></a></li>
+        <li><a href="Call Abandon.htm"><p style="font-family: 'Button2', serif;">Call Abandonment</p></a></li>
+	<li><a href="Call Routing.htm"><p style="font-family: 'Button2', serif;">Call Routing</p></a></li>
+        <li><a href="Call Volume Forecast.htm"><p style="font-family: 'Button2', serif;">Call Volume Forecast</p></a></li>
+        <li><a href="Capacity Planning.htm"><p style="font-family: 'Button2', serif;">Capacity Planning</p></a></li>
+        <li><a href="Conformance.htm"><p style="font-family: 'Button2', serif;">Conformance</p></a></li>
+        <li><a href="First Call Reso.htm"><p style="font-family: 'Button2', serif;">First Call Resolution</p></a></li>
+        <li><a href="Full-Time Equivalent.htm"><p style="font-family: 'Button2', serif;">Full-Time Equivalent</p></a></li>
+	<li><a href="Occupancy.htm"><p style="font-family: 'Button2', serif;">Occupancy</p></a></li>
+        <li><a href="Productivity.htm"><p style="font-family: 'Button2', serif;">Productivity</p></a></li>
+        <li><a href="Required Avail FTE.htm"><p style="font-family: 'Button2', serif;">Required Available FTE</p></a></li>
+	<li><a href="Required FTE.htm"><p style="font-family: 'Button2', serif;">Required FTE</p></a></li>
+        <li><a href="Service Level.htm"><p style="font-family: 'Button2', serif;">Service Level</p></a></li>
+        <li><a href="Shrinkage.htm"><p style="font-family: 'Button2', serif;">Shrinkage</p></a></li>
+        <li><a href="Show Rate.htm"><p style="font-family: 'Button2', serif;">Show Rate</p></a></li>
+	<li><a href="Utilization.htm"><p style="font-family: 'Button2', serif;">Utilization</p></a></li>
+</ul>
+</div>
+</div>
+
+<div class="wrapper">
+<div class="item-main">
+<div class="icon">
+<div class="toggle-btn" data-expand="0">
+    <span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Reports and Dashboards</p></u></b></span><img src="Icon/reports.png">
+    </div>
+    <ul class="toggle-content">
+        <li><a href="Report Files (CS).htm"><p style="font-family: 'Button', serif;">Servicing</p></a></li>
+        <li><a href="Report Files (Non-CS).htm"><p style="font-family: 'Button', serif;">Non-Servicing</p></a></li>
+    </ul>
+</div>
+</div>
+</div>
+
+
+<div class="wrapper">
+<div class="item-main">
+<div class="hover-item">
+<div class="icon">
+<div class="toggle-btn" data-expand="0">
+	<a href="Highlight.htm"><span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Highlights</p></u></b></span></a><img src="Icon/highlight.png">
 	</div>
-  </div>
- </div>
 </div>
-
+</div>
+</div>
+</div>
 
 <div class="wrapper">
-  <div class="item-main">
-    <div class="toggle-btn" data-expand="0">
-      <span class="toggle-btn-name"><b><u>Upskill and Tutorials</u></b></span>
-      <span class="toggle-icon">&plus;</span>
+<div class="item-main">
+<div class="icon">
+<div class="toggle-btn" data-expand="0">
+    <span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Upskill and Tutorials</p></u></b></span><img src="Icon/tutorial.png">
     </div>
     <ul class="toggle-content">
-		<li><a href="Training Material/WFM 101.pptx">WFM 101</a></li>
-		<li><a href="Training Material/Excel Basics.pptx">Excel Basics</a></li>
-        <li><a href="Training Material/Excel Tutorial (Power Query).pptx">Power Query</a></li>
-		<li><a href="Training Material/Data Model.pptx">MS Power Pivot & Data Model</a></li>
-		<li><a href="Training Material/Quality Assurance.pptx">Quality Assurance on Deliverables</a></li>
+		<li><a href="Training Material/WFM 101.pptx"><p style="font-family: 'Button2', serif;">WFM 101</p></a></li>
+		<li><a href="Training Material/Excel Basics.pptx"><p style="font-family: 'Button2', serif;">Excel Basics</p></a></li>
+        	<li><a href="Training Material/Excel Tutorial (Power Query).pptx"><p style="font-family: 'Button2', serif;">Power Query</p></a></li>
+		<li><a href="Training Material/Data Model.pptx"><p style="font-family: 'Button2', serif;">MS Power Pivot & Data Model</p></a></li>
+		<li><a href="Training Material/Quality Assurance.pptx"><p style="font-family: 'Button2', serif;">Quality Assurance on Deliverables</p></a></li>
     </ul>
-  </div>
 </div>
-
+</div>
+</div>
 
 <div class="wrapper">
-  <div class="item-main">
-    <div class="toggle-btn" data-expand="0">
-      <span class="toggle-btn-name"><b><u>Engagement</u></b></span>
-      <span class="toggle-icon">&plus;</span>
-    </div>
-    <ul class="toggle-content">
-        <li><a href="tic tac toe.htm">Tic Tac Toe</a></li>
-    </ul>
-  </div>
+<div class="item-main">
+<div class="icon">
+<div class="toggle-btn" data-expand="0">
+      <span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Engagement</p></u></b></span><img src="Icon/engage.png">
 </div>
-	
+</div>
+    <ul class="toggle-content">
+        <li><a href="tic tac toe.htm"><p style="font-family: 'Button2', serif;"><span style="color: navy blue;"><u>Tic Tac Toe</u></span></p></a></li>
+    </ul>
+</div>
+</div>	
 </div>
 </div>
 
@@ -550,6 +598,7 @@ btn.addEventListener("click", function () {
 </body>
 
 </html>
+
 
 
 
