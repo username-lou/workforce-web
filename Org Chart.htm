@@ -338,21 +338,21 @@ body {background-color: #000833;}
     	}
     .main-content {
   	width: 1570px;
-  	height: 700px;
+  	height: 980px;
   	overflow-y: auto; 
   	margin: 0 auto;
   	padding: 15px;
   	background-color: #FFFFFF;
-	border-radius: 8px;
+	border-radius: 4px;
 	}
    .container {
       display: flex;
       justify-content: start;
-      gap: 300px;
-      padding: 20px;
+      gap: 490px;
+      padding: 2px;
     	}
     .column {
-      width: 300px;
+      width: 30px;
 	}
     h3 {
       margin-top: 0;
@@ -371,13 +371,22 @@ body {background-color: #000833;}
   	}
    .person {
         display: flex;
-        align-items: right;
+        align-items: center;
         list-style: none;
     }
     .person img {
-        height: 450px;
-        margin-right: 10px;
+        height: 790px;
+	margin-left: 4em;
     }
+    .zoom {
+  	background-color: none;
+  	transition: transform .2s; /* Animation */
+  	margin: 0 auto;
+	}
+
+   .zoom:hover {
+  	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
 </style>
 	
 <article>
@@ -390,7 +399,7 @@ body {background-color: #000833;}
 <div class="column">
 <div class="no-wrap-text">
 	
-	<li class="person"><a href="Images/Org Chart.png"><img src="Images\Org Chart.png" type="application/pdf" width="1000px" height="600px"></a></li>
+	<li class="person"><a href="Images/Org Chart.png"><img src="Images\Org Chart.png" width="1000px" height="600px"></a></li>
 
 </div>
 </div>
@@ -528,6 +537,7 @@ btn.addEventListener("click", function () {
 </body>
 
 </html>
+
 
 
 
