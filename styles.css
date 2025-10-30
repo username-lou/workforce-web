@@ -1,7 +1,6 @@
 body {  
     font-family: 'Poppins', sans-serif;
     color: black;
-    background-image: url('Images/bg game.png');
 }
 
 h1 {
@@ -50,6 +49,7 @@ h1 {
     background-color: #FFFFE0;
     color: #FFFFFF;
 }
+
 
 
 
