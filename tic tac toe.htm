@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Serif&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
 </head>
+
 
 <style>
 body {background-color: #000833;}
 </style>
-	
+
+
+<header>
+  <a href="Workforce Web.htm"><img src="Images/WFM4.png" class="logo-large" alt="Logo Left"></a>
+  <a href="Workforce Web.htm"><img src="Images/WFM Logo.png" class="logo-right" alt="Logo Right"></a>
+</header>
+
 <body>
 
 <div id="content">
@@ -41,10 +47,7 @@ header img {
 }
 </style>
 
-<header>
-  <a href="Workforce Web.htm"><img src="Images/WFM4.png" class="logo-large" alt="Logo Left"></a>
-  <a href="Workforce Web.htm"><img src="Images/WFM Logo.png" class="logo-right" alt="Logo Right"></a>
-</header>
+
 
 <!-- Search Button -->
 
@@ -263,7 +266,7 @@ header img {
         <li><a href="Capacity Planning.htm"><p style="font-family: 'Button2', serif;">Capacity Planning</p></a></li>
         <li><a href="Conformance.htm"><p style="font-family: 'Button2', serif;">Conformance</p></a></li>
         <li><a href="First Call Reso.htm"><p style="font-family: 'Button2', serif;">First Call Resolution</p></a></li>
-        <li><a href="Full-Time Equivalent.htm"><p style="font-family: 'Button2', serif;">Full~Time Equivalent</p></a></li>
+        <li><a href="Full-Time Equivalent.htm"><p style="font-family: 'Button2', serif;">Full-Time Equivalent</p></a></li>
 	<li><a href="Occupancy.htm"><p style="font-family: 'Button2', serif;">Occupancy</p></a></li>
         <li><a href="Productivity.htm"><p style="font-family: 'Button2', serif;">Productivity</p></a></li>
         <li><a href="Required Avail FTE.htm"><p style="font-family: 'Button2', serif;">Required Available FTE</p></a></li>
@@ -284,7 +287,7 @@ header img {
     </div>
     <ul class="toggle-content">
         <li><a href="Report Files (CS).htm"><p style="font-family: 'Button2', serif;">Servicing</p></a></li>
-        <li><a href="Report Files (Non-CS).htm"><p style="font-family: 'Button2', serif;">Non~Servicing</p></a></li>
+        <li><a href="Report Files (Non-CS).htm"><p style="font-family: 'Button2', serif;">Non-Servicing</p></a></li>
     </ul>
 </div>
 </div>
@@ -296,14 +299,8 @@ header img {
 <div class="hover-item">
 <div class="icon">
 <div class="toggle-btn" data-expand="0">
-	<span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Highlights</p></u></b></span><img src="Icon/highlight.png">
+	<a href="Highlight.htm"><span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Highlights</p></u></b></span></a><img src="Icon/highlight.png">
 	</div>
-	<ul class="toggle-content">
-		<li><a href="Highlight1.htm"><p style="font-family: 'Button2', serif;">Servicing Performance and Productivity Dashboard: Key Benefits</p></a></li>
-		<li><a href="Highlight2.htm"><p style="font-family: 'Button2', serif;">Revenue Dashboard: Unlock Financial Capacity</p></a></li>
-        <li><a href="Highlight3.htm"><p style="font-family: 'Button2', serif;">HC Dashboard: Unlock Workforce Potential</p></a></li>
-		<li><a href="Highlight4.htm"><p style="font-family: 'Button2', serif;">Unlocking Business Impact: 2025 Restrospective</p></a></li>
-     </ul>
 </div>
 </div>
 </div>
@@ -335,31 +332,341 @@ header img {
 </div>
     <ul class="toggle-content">
 		<li><a href="Halloween.htm"><p style="font-family: 'Button2', serif;"><span style="color: navy blue;"><u>Halloween Party 2025</u></span></p></a></li>
-		<li><a href="Sudoku.htm" target="_blank"><p style="font-family: 'Button2', serif;"><span style="color: navy blue;"><u>Sudoku</u></span></p></a></li>
-		<li><a href="tic tac toe.htm" target="_blank"><p style="font-family: 'Button2', serif;"><span style="color: navy blue;"><u>Tic Tac Toe</u></span></p></a></li>
+		<li><a href="Sudoku.htm"><p style="font-family: 'Button2', serif;"><span style="color: navy blue;"><u>Sudoku</u></span></p></a></li>
+		<li><a href="tic tac toe.htm"><p style="font-family: 'Button2', serif;"><span style="color: navy blue;"><u>Tic Tac Toe</u></span></p></a></li>
     </ul>
 </div>
 </div>	
 </div>
-</div>      
-        
-        <h1>Tic Tac Toe</h1>
-    </div>
-    <div id="board">
-        <div class="square" id="square0"></div>
-        <div class="square" id="square1"></div>
-        <div class="square" id="square2"></div>
-        <div class="square" id="square3"></div>
-        <div class="square" id="square4"></div>
-        <div class="square" id="square5"></div>
-        <div class="square" id="square6"></div>
-        <div class="square" id="square7"></div>
-        <div class="square" id="square8"></div>
-    </div>  
-    <div id="endGame">
-        <input type="button" value="Restart" id="restartButton" onclick="restartButton()"/>
-    </div>
-    <script src="game.js"></script>
-</body>
+</div>
 
+<!-- Main Content Area -->
+
+<style>
+    #board {
+      width: 375px;
+      height: 375px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 5px;
+      margin-top: -100px;
+      margin-left: 500px;
+      justify-items: center;
+    }
+
+    .square {
+      width: 120px;
+      height: 120px;
+      border: 1px solid #D3D3D3;
+      background-color: #87CEEB;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+.square:hover {
+    background-color: #FFFFE0;
+}
+
+#restartButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 150px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+#restartButton:hover {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+  li {
+    position: fix;
+    margin-bottom: 1em;
+    text-indent: 20px;
+</style>
+
+
+
+
+
+<article>
+<main class="center-top">
+	<div class="main-content" id="main-content">
+<div style="text-align: center; margin-top: 20px;">
+  <ul style="list-style: none; padding: 0px; margin-left: 500px;">
+    <h1 style="color: orange; font-size: 32px; font-family: 'Header', serif; margin: 0;">
+      <b>Tic Tac Toe</b>
+    </h1>
+  </ul>
+</div>
+
+   
+<br></br>
+	<h1><b><font size=4 style="font-family: 'Roma', serif;"></font></b></h1>
+
+<br></br>
+<br></br>
+
+    <div id="board">
+      <div class="square" id="square0"></div>
+      <div class="square" id="square1"></div>
+      <div class="square" id="square2"></div>
+      <div class="square" id="square3"></div>
+      <div class="square" id="square4"></div>
+      <div class="square" id="square5"></div>
+      <div class="square" id="square6"></div>
+      <div class="square" id="square7"></div>
+      <div class="square" id="square8"></div>
+    </div>
+  <br></br>    
+<div id="endGame">
+<ul style="list-style: none; padding: 0px; margin-left: 500px;">
+  <input 
+    type="button" 
+    value="Restart Game" 
+    id="restartButton" 
+    onclick="restartButton()" 
+  />
+</ul>
+</div>
+
+</ul>
+</div>
+</main>
+</article>
+
+
+</nav>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<hr style="border: none; height: 4px; background-color: #ffffff; margin: 20px 0;">
+
+
+
+
+ <!-- Sidebar (Optional) -->
+
+  <aside>
+    <p><font color=white>Additional information, links, or ads go here.</font></p>
+  </aside>
+
+<!-- Footer -->
+  <footer>
+    <p><font color=white>&copy; 2025 Pennymac Workforce Management. All rights reserved.</font></p>
+  </footer>
+</div>
+
+
+
+
+<!--Script Search -->
+
+<script>
+function highlightText(container, text) {
+  // Clear existing highlights
+  const highlighted = container.querySelectorAll("span.highlight");
+  highlighted.forEach(span => {
+    const parent = span.parentNode;
+    parent.replaceChild(document.createTextNode(span.textContent), span);
+    parent.normalize(); // Merge adjacent text nodes
+  });
+
+  if (!text) return;
+
+  const safeSearch = text.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const regex = new RegExp(safeSearch, 'gi');
+
+  function walk(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      if (node.nodeValue.match(regex)) {
+        const replacedText = node.nodeValue.replace(regex, match => {
+          return `<span class="highlight" style="background-color: yellow;">${match}</span>`;
+        });
+
+        const temp = document.createElement('span');
+        temp.innerHTML = replacedText;
+
+        while (temp.firstChild) {
+          const inserted = node.parentNode.insertBefore(temp.firstChild, node);
+          // 🔓 Auto-expand if inside a collapsed toggle section
+          expandIfInsideCollapsed(inserted);
+        }
+
+        node.parentNode.removeChild(node);
+      }
+    } else if (
+      node.nodeType === Node.ELEMENT_NODE &&
+      node.tagName !== 'SCRIPT' &&
+      node.tagName !== 'STYLE'
+    ) {
+      for (let i = 0; i < node.childNodes.length; i++) {
+        walk(node.childNodes[i]);
+      }
+    }
+  }
+
+  // 🔓 Expand parent toggle if collapsed
+  function expandIfInsideCollapsed(node) {
+    let parent = node.parentElement;
+    while (parent) {
+      if (parent.classList.contains('toggle-content') && !parent.classList.contains('show')) {
+        parent.classList.add('show');
+        // Change the icon from "+" to "−"
+        const toggleBtn = parent.previousElementSibling;
+        const icon = toggleBtn.querySelector('.toggle-icon');
+        if (icon) {
+          icon.innerHTML = '&minus;';
+        }
+      }
+      parent = parent.parentElement;
+    }
+  }
+
+  walk(container);
+}
+
+const input = document.getElementById("myInput");
+const btn = document.getElementById("myBtn");
+const content = document.getElementById("content");
+
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    btn.click();
+  }
+});
+
+btn.addEventListener("click", function () {
+  const searchText = input.value.trim();
+  highlightText(content, searchText);
+    });
+</script>
+
+
+
+
+<!--Script Collapse/Expand -->
+
+<script>
+  document.querySelectorAll('.toggle-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const content = this.nextElementSibling;
+      const icon = this.querySelector('.toggle-icon');
+
+      content.classList.toggle('show');
+      const isOpen = content.classList.contains('show');
+      icon.innerHTML = isOpen ? '&minus;' : '&plus;';
+    });
+  });
+</script>
+
+
+
+
+  <!-- ======== GAME SCRIPT ======== -->
+  <script>
+    const board = document.getElementById('board');
+    const squares = document.getElementsByClassName('square');
+    const players = ['X', 'O'];
+    let currentPlayer = players[0];
+    const endMessage = document.createElement('h2');
+    endMessage.textContent = `X's turn!`;
+    endMessage.style.marginTop = '20px';
+  endMessage.style.marginLeft = '500px';
+    endMessage.style.textAlign = 'center';
+    endMessage.style.color = 'white';
+    board.after(endMessage);
+
+    var someoneWon = false;
+
+    const winning_combinations = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6]
+    ];
+
+    for (let i = 0; i < squares.length; i++) {
+      squares[i].addEventListener('click', () => {
+        if (someoneWon) return;
+        if (squares[i].textContent !== '') return;
+
+        squares[i].textContent = currentPlayer;
+
+        if (checkWin(currentPlayer)) {
+          someoneWon = true;
+          endMessage.textContent = `Game over! ${currentPlayer} wins!`;
+	  endMessage.style.color = 'green';
+          return;
+        }
+
+        if (checkTie()) {
+          someoneWon = true;
+          endMessage.textContent = `Game is tied!`;
+          return;
+        }
+
+        currentPlayer = (currentPlayer === players[0]) ? players[1] : players[0];
+        endMessage.textContent = `${currentPlayer}'s turn!`;
+      });
+    }
+
+    function checkWin(currentPlayer) {
+      for (let combo of winning_combinations) {
+        const [a, b, c] = combo;
+        if (squares[a].textContent === currentPlayer &&
+            squares[b].textContent === currentPlayer &&
+            squares[c].textContent === currentPlayer) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    function checkTie() {
+      for (let i = 0; i < squares.length; i++) {
+        if (squares[i].textContent === '') return false;
+      }
+      return true;
+    }
+
+    function restartButton() {
+      someoneWon = false;
+      for (let i = 0; i < squares.length; i++) {
+        squares[i].textContent = "";
+      }
+      endMessage.textContent = `X's turn!`;
+      currentPlayer = players[0];
+    }
+  </script>
+
+
+
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
