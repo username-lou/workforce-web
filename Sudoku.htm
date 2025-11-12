@@ -1,44 +1,23 @@
+<!DOCTYPE html>
+<html>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sudoku</title>
 </head>
 
-<!--
-This Sudoku game is licensed under the MIT license:
-
-Copyright (c) 2015 Jonas Ohlsson Aden (jonassebastianohlsson.com)
-Modified work copyright (c) 2019 Nicolai Jaeger (McZak.com)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
-
 
 <style>
 body {
-  background-image: url("Images/background.jpeg"); /* Replace with your image path */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-size: cover; /* Scales the image to cover the entire background */
-  background-attachment: fixed; /* Fixes the background image during scrolling */
+  background-image: url("Images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 </style>
 	
+
 <body>
 
 <div id="content">
@@ -150,44 +129,26 @@ header img {
 	font-family: 'Empty'; 
 	src: url(Fonts/EmptyMegazineDemoRegular.ttf) format('truetype');
 	}
-</style>
-
-<style>
 @font-face {
 	font-family: 'Roma'; 
 	src: url(Fonts/ROMA-Regular.ttf) format('truetype');
 	}
-</style>
-
-<style>
 @font-face {
 	font-family: 'Button'; 
 	src: url(Fonts/Fontspring-DEMO-argentcf-thin.otf) format('opentype');
 	}
-</style>
-
-<style>
 @font-face {
 	font-family: 'Button2'; 
 	src: url(Fonts/Fontspring-DEMO-argentcf-thinitalic.otf) format('opentype');
 	}
-</style>
-
-<style>
 @font-face {
 	font-family: 'Header'; 
 	src: url(Fonts/Fontspring-DEMO-argentcf-bolditalic.otf) format('opentype');
 	}
-</style>
-
-<style>
 @font-face {
 	font-family: 'Content'; 
 	src: url(Fonts/Fontspring-DEMO-argentcf-thinitalic.otf) format('opentype');
 	}
-</style>
-
-<style>
     .horizontal-menu {
 	display: flex;
 	gap: 1px;
@@ -323,12 +284,20 @@ header img {
 <div class="hover-item">
 <div class="icon">
 <div class="toggle-btn" data-expand="0">
-	<a href="Highlight.htm"><span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Highlights</p></u></b></span></a><img src="Icon/highlight.png">
+	<span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Highlights</p></u></b></span><img src="Icon/highlight.png">
+	</div>
+	<ul class="toggle-content">
+		<li><a href="Highlight1.htm"><p style="font-family: 'Button2', serif;">Servicing Performance and Productivity Dashboard: Key Benefits</p></a></li>
+		<li><a href="Highlight2.htm"><p style="font-family: 'Button2', serif;">Revenue Dashboard: Unlock Financial Capacity</p></a></li>
+        <li><a href="Highlight3.htm"><p style="font-family: 'Button2', serif;">HC Dashboard: Unlock Workforce Potential</p></a></li>
+		<li><a href="Highlight4.htm"><p style="font-family: 'Button2', serif;">Unlocking Business Impact: 2025 Restrospective</p></a></li>
+     </ul>
 	</div>
 </div>
 </div>
 </div>
 </div>
+
 
 <div class="wrapper">
 <div class="item-main">
@@ -354,14 +323,15 @@ header img {
       <span class="toggle-btn-name"><b><u><p style="font-family: 'Button', serif;">Engagement</p></u></b></span><img src="Icon/engage.png">
 </div>
     <ul class="toggle-content">
-		<li><a href="Halloween.htm"><p style="font-family: 'Button2', serif;"><span style="color: navy blue;"><u>Halloween Party 2025</u></span></p></a></li>
-		<li><a href="Sudoku.htm"><p style="font-family: 'Button2', serif;"><span style="color: navy blue;"><u>Sudoku</u></span></p></a></li>
-		<li><a href="tic tac toe.htm"><p style="font-family: 'Button2', serif;"><span style="color: navy blue;"><u>Tic Tac Toe</u></span></p></a></li>
+		<li><a href="Halloween.htm"><p style="font-family: 'Button2', serif;">Halloween Party 2025</p></a></li>
+		<li><a href="Sudoku.htm"><p style="font-family: 'Button2', serif;">Sudoku</p></a></li>
+		<li><a href="tic tac toe.htm"><p style="font-family: 'Button2', serif;">Tic Tac Toe</p></a></li>
     </ul>
 </div>
 </div>	
 </div>
 </div>
+
 
 <!-- <head> -->
 <style>
@@ -499,7 +469,7 @@ color: black;
 cursor: pointer;
 }
 
-* {
+** {
  margin:0; padding:0;
  -moz-box-sizing: border-box;
  -webkit-box-sizing: border-box;
@@ -530,15 +500,12 @@ cursor: pointer;
 
 <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src="https://mczak.com/code/sudoku/js/sudoku2.js"></script>
-<!-- </head> -->
-
-<!-- <body> -->
 
 <div class="wrap">
 		
 <!--show candidates toggle-->
 
-<h1 style="text-align: center;"><b><p style="font-family: 'Button', serif;"><font style="color: white;">Sudoku</font></p></b></h1>
+<h1 style="text-align: center;"><b><p style="font-family: 'Header', serif;"><font style="color: white;">Sudoku</font></p></b></h1>
 <br></br>
 
 <label for="toggleCandidates" style="color: yellow;">Show candidates </label>
@@ -606,4 +573,6 @@ cursor: pointer;
  });
  $candidateToggle.trigger("change");
 </script>
-<!-- </body> -->
+
+</body>
+</html>
