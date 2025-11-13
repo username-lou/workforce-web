@@ -412,6 +412,12 @@ header img {
 
    .zoom:hover {
   	transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+		}
+#currentDateDisplay {
+      color: green;
+      font-size: 20px;
+      font-family: 'Roma', serif;
+      padding-left: 40px;
 	}
 </style>
 
@@ -421,7 +427,7 @@ header img {
 		<h1 style="color: green; font-size: 36px; font-family: 'Header', serif; display: flex; justify-content: space-between; align-items: center;">
   		<span><ul><h1 style="color: green;"><b><font size=6><p style="font-family: 'Header', serif;">Announcements</p></font></b></h1></ul></span>
 
-  		<span><ul><h1 style="color: green; padding: 0px 40px 0px;"><b><font size=5><p style="font-family: 'Roma', serif;">Thursday, November 13, 2025</p></font></b></h1></ul></span>
+  		<span><ul><h1 style="color: green; padding: 0px 40px 0px;"><b><font size=5><p style="font-family: 'Roma', serif;"><div id="currentDateDisplay"></div></p></font></b></h1></ul></span>
 </h1>
   
 </h1>
@@ -458,7 +464,7 @@ header img {
 
 <div class="column">
 <div class="no-wrap-text">
-<ul><b><font size=4 style="font-family: 'Header', serif;">Coaching Log and PennySaved Anomaly Deadline</font></b></ul>
+<ul><b><font size=4 style="font-family: 'Header', serif;">Coaching Log and PennySaved Anomaly</font></b></ul>
 	<br></br>	
 	<div class="zoom">
       <li class="person"><img src="Images\Update2.png"></li>
@@ -651,19 +657,24 @@ btn.addEventListener("click", function () {
 </script>
 
 
+<script>
+    // Get the HTML element where the date will be displayed
+    const dateContainer = document.getElementById('currentDateDisplay');
+
+    // Create a new Date object to get the current date
+    const currentDate = new Date();
+
+    // Define options for formatting the date (optional)
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+    // Format the date using toLocaleDateString for a user-friendly format
+    const formattedDate = currentDate.toLocaleDateString(undefined, options);
+
+    // Update the text content of the HTML element with the formatted date
+    dateContainer.textContent = formattedDate;
+</script>
+
+
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
