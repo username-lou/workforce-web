@@ -422,7 +422,7 @@ header img {
 }
 
 #restartButton:hover {
-    background-color: yellow;
+    background-color: green;
     color: blue;
 }
   li {
@@ -650,7 +650,7 @@ btn.addEventListener("click", function () {
         if (checkWin(currentPlayer)) {
           someoneWon = true;
           endMessage.textContent = `Game over! ${currentPlayer} wins!`;
-	  endMessage.style.color = 'green';
+	  endMessage.style.color = 'yellow';
           return;
         }
 
@@ -698,6 +698,7 @@ btn.addEventListener("click", function () {
 
 </body>
 </html>
+
 
 
 
