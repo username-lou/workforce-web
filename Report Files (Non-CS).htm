@@ -1,10 +1,11 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Report Files (Non-CS)</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script> <!-- Include the xlsx library -->
 </head>
 
 <style>
@@ -434,21 +435,21 @@ header img {
 <br></br>
 <h1><font size=5><p style="color:#cfa06d;"><i>Performance</i></p></font></h1>
 <br></br>
-	<a href="https://drive.google.com/drive/folders/1RAZbXOgp9fhTLaOuTg7_w_hwClnv5c8l?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Plotted.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">Performance Dashboard</font></u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1pdbS9d8as0dcIuSgWHuET8C0O-2grK1f?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Extend Wrap.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">Default Servicing Adherence Report</font></u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1AixQZFiM79dOasAvzPDe2hXFimIItmBz?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Prod Dash.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">SDF Performance Report</font></u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1HEjxkJpBIo07YNussAbBD5JicEJkB6gd?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Vendor.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">Default Servicing Performance Review</font></u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1dYXSblqnWO32Uc6cb8dj6kezOzBJuaAi?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Roster.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">Billability Report</font></u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1RAZbXOgp9fhTLaOuTg7_w_hwClnv5c8l?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Plotted.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">Performance Dashboard</font></u></b><i><div id="excel-data38"></div></i></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1pdbS9d8as0dcIuSgWHuET8C0O-2grK1f?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Extend Wrap.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">Default Servicing Adherence Report</font></u></b><i><div id="excel-data39"></div></i></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1AixQZFiM79dOasAvzPDe2hXFimIItmBz?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Prod Dash.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">SDF Performance Report</font></u></b><i><div id="excel-data40"></div></i></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1HEjxkJpBIo07YNussAbBD5JicEJkB6gd?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Vendor.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">Default Servicing Performance Review</font></u></b><i><div id="excel-data41"></div></i></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1dYXSblqnWO32Uc6cb8dj6kezOzBJuaAi?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Roster.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">Billability Report</font></u></b><i><div id="excel-data42"></div></i></span></li></a>
 
 
 <br></br>
 <h1><font size=5><p style="color:#cfa06d;"><i>Attendance</i></p></font></h1>
 <br></br>
-	<a href="https://drive.google.com/drive/folders/1LAW10Dp_tt0PT9CDUT0A1gPn6A9eWcjj?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Kicker.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">Attendance Report</font></u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1QBsb2CYrf6BWMtaAyQfFalMptbjBwB_B?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Absenteeism.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">Attendance Monitoring Report</font></u></b></span></li></a>
-	<a href="https://drive.google.com/drive/folders/1dF9y4ecBnQQsoYwQzTl12i2JC6CL-8ZU" target="_blank"><li class="person"><div class="zoom"><img src="Images/VL Tracker.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">VL Allocation</font></u></b></span></li></a>
-<a href="https://drive.google.com/drive/folders/1A9kOnnIl9ZMowLubyZl_DNXuf_CaqJJr?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/OT and RDOT.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">Non-CS RDOT Tracker</font></u></b></span></li></a>
-	<a href="https://docs.google.com/spreadsheets/d/12O0wDhQN97aWcQwXOT9rUXHd56fS1hcMrCBrrQtvByw/edit?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/OT Tracker.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">OT Tracker</font></u></b></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1LAW10Dp_tt0PT9CDUT0A1gPn6A9eWcjj?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Kicker.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">Attendance Report</font></u></b><i><div id="excel-data43"></div></i></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1QBsb2CYrf6BWMtaAyQfFalMptbjBwB_B?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Absenteeism.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">Attendance Monitoring Report</font></u></b><i><div id="excel-data44"></div></i></span></li></a>
+	<a href="https://drive.google.com/drive/folders/1dF9y4ecBnQQsoYwQzTl12i2JC6CL-8ZU" target="_blank"><li class="person"><div class="zoom"><img src="Images/VL Tracker.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">VL Allocation</font></u></b><i><div id="excel-data45"></div></i></span></li></a>
+<a href="https://drive.google.com/drive/folders/1A9kOnnIl9ZMowLubyZl_DNXuf_CaqJJr?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/OT and RDOT.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">Non-CS RDOT Tracker</font></u></b><i><div id="excel-data46"></div></i></span></li></a>
+	<a href="https://docs.google.com/spreadsheets/d/12O0wDhQN97aWcQwXOT9rUXHd56fS1hcMrCBrrQtvByw/edit?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/OT Tracker.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">OT Tracker</font></u></b><i><div id="excel-data47"></div></i></span></li></a>
 
 	</ul>
 <br></br>
@@ -465,12 +466,12 @@ header img {
 <h1><font size=5><p style="color:#cfa06d;"><i>Scorecards & Incentive</i></p></font></h1>
 <br></br>
     
-	  <a href="https://drive.google.com/drive/folders/1ID8pXCZA7UDWJm9PCHmdXmHbjdXYtnfG?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/SC Agent,AM,DM.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">WNS PennyMac Non-CS Scorecard</font></u></b></span></li></a>
-	  <a href="https://drive.google.com/drive/folders/14EeIymGaVWJ_CG4R6UhdDjX4ZNjtNuzw?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/SM DNP Incentive.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">Attendance Incentive</font></u></b></span></li></a>
+	  <a href="https://drive.google.com/drive/folders/1ID8pXCZA7UDWJm9PCHmdXmHbjdXYtnfG?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/SC Agent,AM,DM.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">WNS PennyMac Non-CS Scorecard</font></u></b><i><div id="excel-data48"></div></i></span></li></a>
+	  <a href="https://drive.google.com/drive/folders/14EeIymGaVWJ_CG4R6UhdDjX4ZNjtNuzw?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/SM DNP Incentive.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">Attendance Incentive</font></u></b><i><div id="excel-data49"></div></i></span></li></a>
 <br></br>
 <h1><font size=5><p style="color:#cfa06d;"><i>Masterlist & Others</i></p></font></h1>
 <br></br>
-	  <a href="https://drive.google.com/drive/folders/1UmunuOGMREPkhOY1ntPiJueJ3f9pCogo?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Masterlist.png"></div><span><b><u><font size=3.5 style="font-family: 'Roma', serif;">Non-CS PennyMac Masterlist</font></u></b></span></li></a>
+	  <a href="https://drive.google.com/drive/folders/1UmunuOGMREPkhOY1ntPiJueJ3f9pCogo?usp=sharing" target="_blank"><li class="person"><div class="zoom"><img src="Images/Masterlist.png"></div><span><b><u><font size=4 style="font-family: 'Roma', serif;">Non-CS PennyMac Masterlist</font></u></b><i><div id="excel-data50"></div></i></span></li></a>
 		
 	</ul>
 </div>
@@ -495,6 +496,92 @@ header img {
   </footer>
 </div>
 
+
+<!--UPDATED AS OF-->
+
+    <style>
+        /* Make the file input button transparent */
+        #file-input {
+            opacity: 0; /* Makes the button transparent */
+            position: absolute; /* Remove the button from the layout */
+            z-index: -1; /* Ensure it's not blocking other elements */
+        }
+
+        /* Custom label button for file input */
+        .file-label {
+            background-color: transparent; /* Green background */
+            color: transparent; /* Text color */
+            padding: 10px 20px; /* Add some padding */
+            font-size: 16px; /* Font size */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Make the label clickable */
+        }
+
+        .file-label:hover {
+            background-color: transparent; /* Darker green on hover */
+        }
+    </style>
+
+    <label for="file-input" class="file-label">Choose Excel File</label>
+    <input type="file" id="file-input" accept=".xlsx, .xls" /> <!-- File input for Excel files -->
+
+
+<script>
+    // Create default values for D1 through D200
+    const defaults = {};
+    for (let i = 1; i <= 200; i++) {
+        defaults[`D${i}`] = ' ';
+    }
+
+    // Load saved values or default values
+    const values = {};
+    for (let i = 1; i <= 200; i++) {
+
+        values[`D${i}`] = localStorage.getItem(`D${i}`) || defaults[`D${i}`];
+
+        const divId = `excel-data${i}`;
+        const div = document.getElementById(divId);
+        if (div) div.innerText = values[`D${i}`];
+    }
+
+    // Handle Excel upload
+    document.getElementById('file-input').addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = function(event) {
+
+            const data = new Uint8Array(event.target.result);
+            const workbook = XLSX.read(data, { type: 'array' });
+
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+
+            // Loop through D1 → D200
+            for (let i = 1; i <= 200; i++) {
+
+                const cellId = `D${i}`;
+                const cell = sheet[cellId];
+
+                const newValue = cell ? cell.v : values[cellId];
+
+                // Save to storage
+                localStorage.setItem(cellId, newValue);
+
+                // Display
+                const divId = `excel-data${i}`;
+                const div = document.getElementById(divId);
+                if (div) div.innerText = newValue;
+
+                // Update cached value
+                values[cellId] = newValue;
+            }
+        };
+
+        reader.readAsArrayBuffer(file);
+    });
+</script>
 
 
 
